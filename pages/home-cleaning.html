@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Cleaning - Bright Street</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Top Contact Bar -->
+    <div class="bg-[#2196F3] text-white py-2 px-4">
+        <div class="container mx-auto flex flex-wrap justify-between items-center text-sm">
+            <div class="flex items-center space-x-6">
+                <span><i class="fa-solid fa-phone mr-2"></i> +880 1711223344</span>
+                <span><i class="fa-solid fa-envelope mr-2"></i> info@brightstreet.bd</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation Bar with Dropdown -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="text-2xl font-bold text-blue-900 tracking-wider">
+                    <span class="text-blue-600">BRIGHT</span> <span class="text-amber-500">STREET</span>
+                    <p class="text-[10px] text-gray-500 font-normal tracking-normal uppercase">bright-street-cleaning-services</p>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium">
+                <!-- Home -->
+                <a href="../index.html" class="hover:text-blue-600">Home</a>
+
+                <!-- Cleaning Dropdown (Active & Functional with all 9 pages) -->
+                <div class="relative group">
+                    <button class="flex items-center text-green-600 focus:outline-none py-2 cursor-pointer font-medium">
+                        Cleaning <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <!-- Mega Dropdown (3 Columns) -->
+                    <div class="absolute left-0 mt-0 w-[600px] bg-white border border-gray-100 shadow-xl rounded-md hidden group-hover:grid grid-cols-3 gap-2 p-4 z-50">
+                        <div>
+                            <a href="home-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Home Cleaning</a>
+                            <a href="school-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> School Cleaning</a>
+                            <a href="mattress-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Mattress Cleaning</a>
+                        </div>
+                        <div>
+                            <a href="deep-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> DEEP Cleaning</a>
+                            <a href="restaurant-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Restaurant Cleaning</a>
+                            <a href="window-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Window Cleaning</a>
+                        </div>
+                        <div>
+                            <a href="office-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Office Cleaning</a>
+                            <a href="sofa-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Sofa Cleaning</a>
+                            <a href="ironing-services.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Ironing Services</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pest Control (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Pest Control <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+
+                <!-- Maintenance (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Maintenance <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+
+                <!-- Painting Services (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Painting Services <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+   <!-- Specific Page Main Content Area -->
+    <main class="py-12 container mx-auto px-4 min-h-[500px]">
+        
+        <!-- Hero Section based on Screenshot -->
+        <section class="bg-white rounded-2xl shadow-md overflow-hidden mb-8 border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 p-8 lg:p-12 space-y-6">
+                    <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
+                        Top-Rated Home Cleaning Service in Banani, Dhaka
+                    </h1>
+                    <p class="text-lg text-gray-700 font-medium">
+                        #1 Home Cleaning Excellence in Bangladesh, Transforming Homes in a Reliable Way
+                    </p>
+                    
+                    <!-- Bullet Points -->
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> Licensed Professionals
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> Mission with Zero Complaint Service
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> 24/7 Emergency Customer Service
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> 100% Satisfaction Guaranteed
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Image Side (Ekhane apnar local image path boshaben) -->
+                <div class="lg:col-span-5 h-full min-h-[350px] bg-cover bg-center relative" style="background-image: url('../images/home-cleaning-sponge.jpg');">
+                    <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent lg:block hidden"></div>
+                </div>
+            </div>
+
+            <!-- Bottom Black Banner inside Section -->
+            <div class="bg-black text-white py-4 px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-sm md:text-base font-medium">
+                    Schedule Your Appointment Today and Enjoy Your Service!
+                </p>
+                <a href="#booking" class="bg-[#2196F3] hover:bg-blue-600 text-white font-semibold px-6 py-2.5 rounded-lg text-sm shadow transition">
+                    GET 15% OFF BSGM&CS-LLC
+                </a>
+            </div>
+        </section>
+<!-- Introduction & Image Section (Screenshot 1) -->
+    <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Left Image Side -->
+            <div class="lg:col-span-5">
+                <img src="../images/cleaning-team-maids.jpg" alt="Cleaning Team" class="rounded-xl shadow-md w-full object-cover h-[350px]">
+            </div>
+            <!-- Right Text Content -->
+            <div class="lg:col-span-7 space-y-4 text-gray-700">
+                <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 leading-tight">
+                    For a Spotless Home Anywhere in Banani, Dhaka, BRIGHT STREET - CLEANING SERVICES is a Smart Choice
+                </h2>
+                <p class="leading-relaxed text-sm md:text-base">
+                    BRIGHT STREET - CLEANING SERVICES doesn't settle for average - we aim for excellence in every job we do. Finding the best home cleaning service in Banani has now become so easy with our company. We provide premium-quality cleaning services in our community. We have been working on brightening homes and businesses for years.
+                </p>
+                <p class="leading-relaxed text-sm md:text-base">
+                    At our company, we prioritize your well-being. Our team strictly follows health and safety protocols to ensure your space is clean, hygienic, and safe for your family, employees, or customers. We are committed to providing excellence, professionalism, and environmental sustainability.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview & Flexibility Section (Screenshot 2) -->
+    <section class="py-12 bg-gray-50 rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12 space-y-8">
+        <div>
+            <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
+                Best Home Cleaning Services In Banani and How We Provide It
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Are you looking for the best <strong>house cleaning services in Banani</strong>? Then you may take a cleaning service from us. Customers are like an extended family to us. Our number one commitment is to maintain a long-lasting relationship with our customers.
+            </p>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                We provide the best and most <strong>professional cleaning services in Banani</strong>[cite: 4]. We also provide <strong>apartment cleaning services</strong>. If you want to make your apartment look bright and shining, then this will be the best service for you[cite: 4]. Also, if you are searching for a maid for your home, we provide reliable maid services[cite: 4].
+            </p>
+        </div>
+
+        <div>
+            <h3 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
+                Affordable and Flexible Home Cleaning Options
+            </h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Our company provides cheap <strong>cleaning services in Banani</strong>[cite: 4]. All of our services, including house cleaning, office cleaning, bathroom cleaning, window cleaning, and carpet cleaning, are budget-friendly[cite: 4]. You can choose any cleaning options that are flexible for you, and we are ready to accommodate your schedule[cite: 4].
+            </p>
+        </div>
+
+        <div>
+            <h3 class="text-xl lg:text-2xl font-bold text-gray-900 mb-3">
+                Why Choose Our Home Cleaning Company in Banani?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+                <strong>Expertly Trained Team:</strong> Our expert members are experienced in this sector[cite: 4]. Our company uses the latest equipment and techniques to meet our customers' highest expectations[cite: 4].
+            </p>
+        </div>
+    </section>
+
+    <!-- Detailed Types of Services Section (Screenshot 3) -->
+    <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12 space-y-6">
+        <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
+            Types of Home Cleaning Services We Offer
+        </h2>
+
+        <!-- House Cleaning -->
+        <div class="space-y-2">
+            <h3 class="text-xl font-semibold text-gray-800">House Cleaning:</h3>
+            <p class="text-gray-700 leading-relaxed">
+                Among all the cleaning services, house cleaning is the most common type offered by our company. Our house cleaning service will make everything clean and tidy in your house, vacuuming and mopping floors, cleaning interior windows, and sanitizing kitchen units[cite: 5].
+            </p>
+        </div>
+
+        <!-- Window Cleaning -->
+        <div class="space-y-2">
+            <h3 class="text-xl font-semibold text-gray-800">Window Cleaning:</h3>
+            <p class="text-gray-700 leading-relaxed">
+                We provide indoor and outdoor window cleaning services for your house or business. A clean window plays a vital role in making your home or office shine more and look neat to visitors[cite: 5].
+            </p>
+        </div>
+
+        <!-- Bathroom Cleaning -->
+        <div class="space-y-2">
+            <h3 class="text-xl font-semibold text-gray-800">Bathroom Cleaning:</h3>
+            <p class="text-gray-700 leading-relaxed">
+                Our bathroom cleaning service ensures that one of the most used rooms remains hygienic and spotless[cite: 5]. We tackle all surfaces, from the sink to the shower, bathtub, and toilet, removing grime, soap scum, and buildup[cite: 5].
+            </p>
+        </div>
+
+        <!-- Kitchen Cleaning -->
+        <div class="space-y-2">
+            <h3 class="text-xl font-semibold text-gray-800">Kitchen Cleaning:</h3>
+            <p class="text-gray-700 leading-relaxed">
+                The kitchen is the heart of the home. Our kitchen cleaning service involves a thorough cleaning of countertops, appliances, sinks, and cabinets, removing grease, stains, and food residues effectively[cite: 5].
+            </p>
+        </div>
+    </section>
+    <!-- Why Should You Prefer Section (Screenshot 1) -->
+    <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Left Image Side -->
+            <div class="lg:col-span-5">
+                <img src="../images/cleaning-supervisor-staff.jpg" alt="Cleaning Supervisor" class="rounded-xl shadow-md w-full object-cover h-[380px]">
+            </div>
+            <!-- Right Text Content -->
+            <div class="lg:col-span-7 space-y-4">
+                <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
+                    Why Should You Prefer BSGM&CS-LLC?
+                </h2>
+                <ul class="space-y-3 text-gray-700 text-sm md:text-base">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Our experts are certified in home cleaning services in Banani, Dhaka. Experts also possess rich experience in the field, guaranteeing exceptional results.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>To meet our client's expectations and needs, we maintain high standards of professionalism.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>We try our best to ensure a safe environment for your family. That's why, to remove germs, bacteria, and unpleasant smells effectively, we use eco-friendly cleaning agents.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Our main goal is to satisfy our clients in any way. We are ready to clean repeatedly until our clients are happy with our work, with no extra charges for further cleaning.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>We always focus on timely delivery. Our expert members complete tasks before deadlines so your room is ready to enjoy.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>To avoid confusion, our team aims to maintain clear communication with each client.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer FAQ Section with Interactive Toggle (Screenshot 2) -->
+    <section class="py-12 bg-gray-50 rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+        <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-8 text-center">
+            Customer FAQ – Frequently Asked Questions For Cleaning Service
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- FAQ Column 1 -->
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>What makes our company the best cleaning company in Banani?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                        Our commitment to zero-complaint service, eco-friendly products, certified expert teams, and 100% satisfaction guarantee makes us the top-rated choice.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Can I book an hourly cleaning service in Banani?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                        Yes, we offer flexible hourly cleaning packages tailored to your schedule and specific requirements.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Do you use eco-friendly cleaning products in your services?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                        Yes, we strictly use safe, non-toxic, and eco-friendly cleaning agents to ensure a healthy home environment for your family and pets.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Do you provide cleaning services for villas and more significant properties?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                        Absolutely! We handle apartments, townhouses, large villas, and commercial offices with specialized equipment and trained crews.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Column 2 -->
+            <div class="space-y-4">
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Do you provide cleaning services in all areas of Dhaka?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                        Yes, we proudly offer our cleaning services to residents across Banani, Gulshan, Baridhara, Uttara, and surrounding areas.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>How do you ensure safety and quality in your home cleaning services?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                        Our staff undergoes strict background checks, professional training, and adheres to strict safety protocols for every assignment.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Can I schedule a recurring cleaning service?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                        Yes, you can set up daily, weekly, or bi-weekly recurring cleaning schedules with discounted rates.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 8 -->
+                <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>What should I do before the cleaning team arrives?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                        You just need to secure valuables and provide access to water and electricity; our team takes care of the rest!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Customer Reviews Section (Screenshot 3) -->
+    <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Left Info Card -->
+            <div class="lg:col-span-4 bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center space-y-4">
+                <img src="../images/company-logo-badge.jpg" alt="Company Logo" class="w-16 h-16 mx-auto object-cover rounded-full shadow">
+                <h3 class="font-bold text-gray-900 text-lg">BRIGHT STREET GENERAL MAINTENANCE AND CLEANING SERVICES - L.L.C</h3>
+                <div class="flex justify-center text-yellow-400 space-x-1">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-gray-600 text-sm font-medium">263 Google reviews</p>
+                <a href="#review" class="inline-block bg-white border border-gray-300 hover:bg-gray-100 text-gray-800 font-semibold px-6 py-2 rounded-lg text-sm shadow-sm transition">
+                    Write a review
+                </a>
+            </div>
+
+            <!-- Right Review Cards Carousel Area -->
+            <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 relative shadow-sm space-y-3">
+                    <div class="flex justify-between items-start">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-teal-700 text-white font-bold rounded-full flex items-center justify-center">A</div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm flex items-center">
+                                    Arnel Venturina <i class="fa-solid fa-circle-check text-blue-500 ml-1.5 text-xs"></i>
+                                </h4>
+                                <span class="text-xs text-gray-500">10 September 2026</span>
+                            </div>
+                        </div>
+                        <i class="fa-brands fa-google text-red-500"></i>
+                    </div>
+                    <div class="flex text-yellow-400 text-xs space-x-0.5">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        They did split AC cleaning on our shop, good work highly recommend!
+                    </p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 relative shadow-sm space-y-3">
+                    <div class="flex justify-between items-start">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-indigo-600 text-white font-bold rounded-full flex items-center justify-center">S</div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-sm flex items-center">
+                                    Sylvia <i class="fa-solid fa-circle-check text-blue-500 ml-1.5 text-xs"></i>
+                                </h4>
+                                <span class="text-xs text-gray-500">8 September 2026</span>
+                            </div>
+                        </div>
+                        <i class="fa-brands fa-google text-red-500"></i>
+                    </div>
+                    <div class="flex text-yellow-400 text-xs space-x-0.5">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        Thank you very much for the great AC & Duct cleaning! Two hard working people came to clean our very dusty AC system! Great Job!... <span class="text-blue-600 cursor-pointer font-medium">Read more</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <!-- Common Footer Section -->
+    <footer class="bg-black text-white pt-12 pb-6">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Company Info -->
+            <div>
+                <h2 class="text-xl font-bold mb-4 text-amber-500">BRIGHT STREET</h2>
+                <p class="text-gray-400 text-sm mb-4">
+                    BRIGHT STREET CLEANING SERVICES is your trusted partner for all professional cleaning and sanitation needs in Bangladesh.
+                </p>
+                <h3 class="font-semibold mb-2">Connect with us</h3>
+                <div class="flex space-x-3 mb-6">
+                    <a href="https://facebook.com" target="_blank" class="bg-blue-600 p-2 rounded text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="bg-pink-600 p-2 rounded text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="bg-gray-700 p-2 rounded text-white"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://tiktok.com" target="_blank" class="bg-red-600 p-2 rounded text-white"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://web.whatsapp.com" target="_blank" class="bg-green-600 p-2 rounded text-white"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Our Services Links -->
+            <div>
+                <h3 class="text-lg font-bold mb-4 border-b border-gray-800 pb-2">Our Services</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="home-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Home Cleaning</a></li>
+                    <li><a href="deep-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Deep Cleaning Services</a></li>
+                    <li><a href="sofa-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Sofa Cleaning Services</a></li>
+                    <li><a href="window-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Window Cleaning Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Get In Touch -->
+            <div>
+                <h3 class="text-lg font-bold mb-4 border-b border-gray-800 pb-2">Get In Touch</h3>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-location-dot mr-2 text-amber-500"></i> Road 11, Banani, Dhaka - Bangladesh</p>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-phone mr-2 text-amber-500"></i> +880 1711 223344</p>
+                <p class="text-sm text-gray-400 mb-4"><i class="fa-solid fa-envelope mr-2 text-amber-500"></i> info@brightstreet.bd</p>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 mt-8 pt-4 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+            <p>© 2026 Bright Street Cleaning Services LLC. All rights reserved.</p>
+            <p class="mt-2 md:mt-0">Designed & Developed by <span class="text-amber-500 font-semibold">Mymuna</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>

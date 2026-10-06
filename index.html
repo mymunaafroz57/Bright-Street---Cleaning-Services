@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Street - Cleaning Services</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Top Contact Bar -->
+    <div class="bg-[#2196F3] text-white py-2 px-4">
+        <div class="container mx-auto flex flex-wrap justify-between items-center text-sm">
+            <div class="flex items-center space-x-6">
+                <span><i class="fa-solid fa-phone mr-2"></i> +880 1711223344</span>
+                <span><i class="fa-solid fa-envelope mr-2"></i> info@brightstreet.bd</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation Bar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="text-2xl font-bold text-blue-900 tracking-wider">
+                    <span class="text-blue-600">BRIGHT</span> <span class="text-amber-500">STREET</span>
+                    <p class="text-[10px] text-gray-500 font-normal tracking-normal uppercase">bright-street-cleaning-services</p>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium">
+                <!-- Home -->
+                <a href="../index.html" class="hover:text-blue-600">Home</a>
+
+                <!-- Cleaning Dropdown (Active & Functional) -->
+                <div class="relative group">
+                    <button class="flex items-center text-green-600 focus:outline-none py-2 cursor-pointer font-medium">
+                        Cleaning <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <!-- Mega Dropdown for Cleaning Services (3 Columns now) -->
+                    <div class="absolute left-0 mt-0 w-[550px] bg-white border border-gray-100 shadow-xl rounded-md hidden group-hover:grid grid-cols-3 gap-2 p-4 z-50">
+                        <div>
+                            <a href="home-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Home Cleaning</a>
+                            <a href="school-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> School Cleaning</a>
+                            <a href="mattress-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Mattress Cleaning</a>
+                        </div>
+                        <div>
+                            <a href="deep-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> DEEP Cleaning</a>
+                            <a href="restaurant-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Restaurant Cleaning</a>
+                            <a href="window-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Window Cleaning</a>
+                        </div>
+                        <div>
+                            <a href="office-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Office Cleaning</a>
+                            <a href="sofa-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Sofa Cleaning</a>
+                            <a href="ironing-services.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Ironing Services</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pest Control (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Pest Control <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+
+                <!-- Maintenance (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Maintenance <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+
+                <!-- Painting Services (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Painting Services <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section (Cleaning Focused) -->
+    <main class="py-12 container mx-auto px-4 min-h-[500px]">
+        <section id="cleaning-services" class="py-12 bg-white rounded-xl shadow-sm px-6">
+            <div class="max-w-4xl mx-auto space-y-6 text-center">
+                <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                    Professional Cleaning Services in Bangladesh
+                </h1>
+                <p class="text-lg text-gray-700">
+                    Deep cleaning, home cleaning, sofa cleaning, and total sanitation solutions tailored for residential and commercial needs.
+                </p>
+                <div class="pt-4">
+                    <a href="#contact" class="inline-block bg-[#3498db] text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-blue-600 transition">Book Cleaning Service</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-black text-white pt-12 pb-6">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Company Info & QR Code -->
+            <div>
+                <h2 class="text-xl font-bold mb-4 text-amber-500">BRIGHT STREET</h2>
+                <p class="text-gray-400 text-sm mb-4">
+                    BRIGHT STREET CLEANING SERVICES is your trusted partner for all professional cleaning and sanitation needs in Bangladesh.
+                </p>
+                <h3 class="font-semibold mb-2">Connect with us</h3>
+                <div class="flex space-x-3 mb-6">
+                    <a href="https://facebook.com" target="_blank" class="bg-blue-600 p-2 rounded text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="bg-pink-600 p-2 rounded text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="bg-gray-700 p-2 rounded text-white"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://tiktok.com" target="_blank" class="bg-red-600 p-2 rounded text-white"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://web.whatsapp.com" target="_blank" class="bg-green-600 p-2 rounded text-white"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <!-- QR Code Box -->
+                <div class="bg-white p-2 inline-block rounded shadow">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://github.com/Miskat098" alt="QR Code" class="w-28 h-28 object-contain">
+                </div>
+            </div>
+
+            <!-- Our Services Links -->
+            <div>
+                <h3 class="text-lg font-bold mb-4 border-b border-gray-800 pb-2">Our Services</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="deep-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Deep Cleaning Services</a></li>
+                    <li><a href="home-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Home Cleaning Services</a></li>
+                    <li><a href="sofa-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Sofa Cleaning Services</a></li>
+                    <li><a href="window-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Window Cleaning Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Get In Touch & Google Maps -->
+            <div>
+                <h3 class="text-lg font-bold mb-4 border-b border-gray-800 pb-2">Get In Touch</h3>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-location-dot mr-2 text-amber-500"></i> Road 11, Banani, Dhaka - Bangladesh</p>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-phone mr-2 text-amber-500"></i> +880 1711 223344</p>
+                <p class="text-sm text-gray-400 mb-4"><i class="fa-solid fa-envelope mr-2 text-amber-500"></i> info@brightstreet.bd</p>
+
+                <!-- Google Maps Embed -->
+                <div class="mt-4 rounded overflow-hidden border border-gray-700 shadow-md">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.5885234567!2d90.403!3d23.793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ3JzM0LjgiTiA5MMKwMjQnMTEuMCJF!5e0!3m2!1sen!2sbd!4v1600000000000!5m2!1sen!2sbd" width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 mt-8 pt-4 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+            <p>© 2026 Bright Street Cleaning Services LLC. All rights reserved.</p>
+            <p class="mt-2 md:mt-0">Designed & Developed by <span class="text-amber-500 font-semibold">Mymuna</span></p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

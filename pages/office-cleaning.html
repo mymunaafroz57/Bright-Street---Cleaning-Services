@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Cleaning - Bright Street</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Top Contact Bar -->
+    <div class="bg-[#2196F3] text-white py-2 px-4">
+        <div class="container mx-auto flex flex-wrap justify-between items-center text-sm">
+            <div class="flex items-center space-x-6">
+                <span><i class="fa-solid fa-phone mr-2"></i> +880 1711223344</span>
+                <span><i class="fa-solid fa-envelope mr-2"></i> info@brightstreet.bd</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation Bar with Dropdown -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="text-2xl font-bold text-blue-900 tracking-wider">
+                    <span class="text-blue-600">BRIGHT</span> <span class="text-amber-500">STREET</span>
+                    <p class="text-[10px] text-gray-500 font-normal tracking-normal uppercase">bright-street-cleaning-services</p>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium">
+                <!-- Home -->
+                <a href="../index.html" class="hover:text-blue-600">Home</a>
+
+                <!-- Cleaning Dropdown (Active & Functional with all 9 pages) -->
+                <div class="relative group">
+                    <button class="flex items-center text-green-600 focus:outline-none py-2 cursor-pointer font-medium">
+                        Cleaning <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <!-- Mega Dropdown (3 Columns) -->
+                    <div class="absolute left-0 mt-0 w-[600px] bg-white border border-gray-100 shadow-xl rounded-md hidden group-hover:grid grid-cols-3 gap-2 p-4 z-50">
+                        <div>
+                            <a href="home-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Home Cleaning</a>
+                            <a href="school-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> School Cleaning</a>
+                            <a href="mattress-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Mattress Cleaning</a>
+                        </div>
+                        <div>
+                            <a href="deep-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> DEEP Cleaning</a>
+                            <a href="restaurant-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Restaurant Cleaning</a>
+                            <a href="window-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Window Cleaning</a>
+                        </div>
+                        <div>
+                            <a href="office-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Office Cleaning</a>
+                            <a href="sofa-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Sofa Cleaning</a>
+                            <a href="ironing-services.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Ironing Services</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pest Control (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Pest Control <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+
+                <!-- Maintenance (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Maintenance <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+
+                <!-- Painting Services (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Painting Services <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+   <!-- Specific Page Main Content Area -->
+    <main class="py-12 container mx-auto px-4 min-h-[500px]">
+        
+        <!-- Hero Section -->
+        <section class="bg-white rounded-2xl shadow-md overflow-hidden mb-8 border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 p-8 lg:p-12 space-y-6">
+                    <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
+                        BSGM&CS-LLC Office Cleaning Services in Banani, Dhaka – Your Spotless Workspace Solution
+                    </h1>
+                    <p class="text-lg text-gray-700 font-medium">
+                        First Impressions Matter! Keep Your Office Clean & Professional With BSGM&CS-LLC
+                    </p>
+                    
+                    <!-- Bullet Points -->
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> On Time Service
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> Available for 24/7 Emergency Service
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> Trained & Equipped Teams
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> Eco-Smart Cleaning
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Image Side -->
+                <div class="lg:col-span-5 h-full min-h-[350px] bg-cover bg-center relative" style="background-image: url('../images/office-cleaning-hero.jpg');">
+                    <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent lg:block hidden"></div>
+                </div>
+            </div>
+
+            <!-- Bottom Black Banner inside Section -->
+            <div class="bg-black text-white py-4 px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-sm md:text-base font-medium">
+                    Schedule Your Appointment Today and Enjoy Your Service!
+                </p>
+                <a href="#booking" class="bg-[#2196F3] hover:bg-blue-600 text-white font-semibold px-6 py-2.5 rounded-lg text-sm shadow transition">
+                    GET 15% OFF BSGM&CS-LLC
+                </a>
+            </div>
+        </section>
+
+        <!-- Best Office Cleaning Services Section -->
+        <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Image Side -->
+                <div class="lg:col-span-5">
+                    <img src="../images/office-cleaning-detail.jpg" alt="Office Cleaning Team" class="rounded-xl shadow-lg w-full object-cover h-[340px]">
+                </div>
+
+                <!-- Right Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-gray-700 leading-relaxed">
+                    <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
+                        Best Office Cleaning Services in Banani, Dhaka
+                    </h2>
+                    <p>
+                        A clean office isn't just about appearances; it boosts productivity, impresses clients, and keeps employees healthy. At <span class="font-semibold text-gray-900">BSGM&CS-LLC Office Cleaning Services</span>, we make it easy with customized plans, professional staff, and eco-friendly cleaning. Whether you need daily cleaning or specialized deep cleaning, we deliver consistent, high-quality results. We are the top choice for office cleaning services in Banani. We serve our clients with high value and trust.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits of BSGM&CS-LLC Office Cleaning Services Section -->
+        <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12 space-y-8">
+            <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
+                Benefits of BSGM&CS-LLC Office Cleaning Services
+            </h2>
+
+            <!-- Tailored Cleaning Plans -->
+            <div class="space-y-3 pt-4 border-t border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900">Tailored Cleaning Plans</h3>
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                    Every office is unique, so our cleaning plans are tailored accordingly. Whether you run a cozy startup space or a corporate office, we customize every cleaning plan for your office size & needs. Tell us what matters most in your office, and we will make it happen. You will always receive a clean workspace tailored to your exact schedule and specifications.
+                </p>
+            </div>
+
+            <!-- Eco-Friendly Products -->
+            <div class="space-y-3 pt-4 border-t border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900">Eco-Friendly Products</h3>
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                    Our green cleaners use eco-friendly products that fight against dirt and germs, but leave behind no harsh chemicals. You can breathe easily without feeling suffocation or allergic reaction. Perfect for spaces where people work, eat, or brainstorm.
+                </p>
+            </div>
+
+            <!-- Advanced Equipment -->
+            <div class="space-y-3 pt-4 border-t border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900">Advanced Equipment</h3>
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                    We offer an advanced toolkit featuring HEPA vacuums, microfiber technology, and gentle yet powerful solutions. We deep clean your surfaces without causing damage, make your windows spotless without streaks, and freshen your carpets without that weird chemical smell.
+                </p>
+            </div>
+
+            <!-- Flexible Scheduling -->
+            <div class="space-y-3 pt-4 border-t border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900">Flexible Scheduling</h3>
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                    Does your business never sleep? Neither do our cleaning options. Our emergency team is available 24/7. They will respond to you quickly whenever you need services. Do you need a quick cleanup before the team arrives? Or a midnight deep clean after the office party? Simply call us, and our team will be there to assist you.
+                </p>
+            </div>
+
+            <!-- Affordable Price -->
+            <div class="space-y-3 pt-4 border-t border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900">Affordable Price</h3>
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                    We offer office cleaning services in Banani at the most affordable Price. Our pricing includes all materials and labor. We explain cost factors clearly so that you understand what you are paying for. Furthermore, we offer budget-friendly annual plans to ensure your yearly safety.
+                </p>
+            </div>
+
+            <!-- 100% Satisfaction Guarantee -->
+            <div class="space-y-3 pt-4 border-t border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900">100% Satisfaction Guarantee</h3>
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                    We don’t stop until your space is spotless. Your satisfaction is our main priority, and we believe that it’s non-negotiable. That’s the BSGM&CS-LLC standard. Now, imagine walking into an office that always feels fresh and inviting.
+                </p>
+            </div>
+        </section>
+<!-- Regular Office Cleaning Section -->
+        <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Image Side -->
+                <div class="lg:col-span-6">
+                    <img src="../images/regular-office-cleaning.jpg" alt="Regular Office Cleaning" class="rounded-xl shadow-lg w-full object-cover h-[320px]">
+                </div>
+
+                <!-- Right Text Content -->
+                <div class="lg:col-span-6 space-y-4 text-gray-700 leading-relaxed">
+                    <p class="text-xs font-semibold tracking-wider text-blue-600 uppercase">
+                        Our Office Cleaning Services – Restore Brand-New Shine!
+                    </p>
+                    <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
+                        Regular Office Cleaning[cite: 15]
+                    </h2>
+                    <p class="text-sm md:text-base">
+                        Think of us as your daily reset button. While you focus on business, we handle the environment. We will wipe down every surface, vanish floor grime, and leave your office polished with a shine. Just walk into a fresh, clean space that makes every workday feel brand new. We are the perfect solution for busy offices that need consistent, regular cleaning without lifting a finger[cite: 15].
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12 space-y-6">
+            <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
+                How It Works – Simple & Stress-Free[cite: 16]
+            </h2>
+            <ol class="space-y-3 text-gray-700 text-sm md:text-base list-decimal list-inside leading-relaxed">
+                <li class="pl-2">We begin with a complimentary consultation to assess your space and determine the best cleaning approach[cite: 16].</li>
+                <li class="pl-2">Customize the cleaning plan based on your expectations and office size[cite: 16].</li>
+                <li class="pl-2">Start removing dirt and germs, and clean everywhere to make your office look brand new[cite: 16].</li>
+            </ol>
+        </section>
+
+        <!-- Why You Need Professional Office Cleaning Services Section -->
+        <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12 space-y-8">
+            <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
+                Why You Need Professional Office Cleaning Services[cite: 16]
+            </h2>
+
+            <!-- Healthier Workplace -->
+            <div class="space-y-2 pt-4 border-t border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900">Healthier Workplace[cite: 16]</h3>
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                    Germs don’t miss any chance to attack you! Our deep cleaning service kills all the germs, reduces illness, and keeps your office healthy and present. Make your office healthier before it’s too late[cite: 16].
+                </p>
+            </div>
+
+            <!-- Better First Impressions -->
+            <div class="space-y-2 pt-4 border-t border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900">Better First Impressions[cite: 16]</h3>
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                    A spotless office speaks before you even say hello. Impress clients from the moment they step in. A clean office not only keeps you healthy but also attracts clients, and a clean office is mandatory for productive work[cite: 16].
+                </p>
+            </div>
+
+            <!-- Long-Term Savings -->
+            <div class="space-y-2 pt-4 border-t border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900">Long-Term Savings[cite: 16]</h3>
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                    Proper care prevents wear and tear. Protect your investment in furniture, floors, and tech with regular professional cleaning. Every office has expensive materials, and they require careful cleaning on a weekly and monthly basis to last longer[cite: 16].
+                </p>
+            </div>
+        </section>
+
+        <!-- Why Choose BSGM&CS-LLC Office Cleaning Services Section -->
+        <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Image Side -->
+                <div class="lg:col-span-6">
+                    <img src="../images/why-choose-office.jpg" alt="Why Choose BSGM&CS-LLC" class="rounded-xl shadow-lg w-full object-cover h-[350px]">
+                </div>
+
+                <!-- Right Text Content -->
+                <div class="lg:col-span-6 space-y-6 text-gray-700 leading-relaxed">
+                    <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
+                        Why Choose BSGM&CS-LLC Office Cleaning Services in Banani?
+                    </h2>
+                    <ul class="space-y-3 text-sm md:text-base">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong class="text-gray-900">Locally Trusted</strong> – BSGM&CS-LLC has years of experience in Banani[cite: 17].</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong class="text-gray-900">Affordable Pricing</strong> – We don’t charge any hidden fees. We have a clear pricing structure[cite: 17].</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong class="text-gray-900">Quick Response</strong> – BSGM&CS-LLC emergency team is available 24/7 for your needs[cite: 17].</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong class="text-gray-900">Certified Team</strong> – Our Cleaners are trained in the latest cleaning methods[cite: 17].</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Common Footer Section -->
+    <footer class="bg-black text-white pt-12 pb-6">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Company Info -->
+            <div>
+                <h2 class="text-xl font-bold mb-4 text-amber-500">BRIGHT STREET</h2>
+                <p class="text-gray-400 text-sm mb-4">
+                    BRIGHT STREET CLEANING SERVICES is your trusted partner for all professional cleaning and sanitation needs in Bangladesh.
+                </p>
+                <h3 class="font-semibold mb-2">Connect with us</h3>
+                <div class="flex space-x-3 mb-6">
+                    <a href="https://facebook.com" target="_blank" class="bg-blue-600 p-2 rounded text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="bg-pink-600 p-2 rounded text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="bg-gray-700 p-2 rounded text-white"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://tiktok.com" target="_blank" class="bg-red-600 p-2 rounded text-white"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://web.whatsapp.com" target="_blank" class="bg-green-600 p-2 rounded text-white"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Our Services Links -->
+            <div>
+                <h3 class="text-lg font-bold mb-4 border-b border-gray-800 pb-2">Our Services</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="home-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Home Cleaning</a></li>
+                    <li><a href="deep-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Deep Cleaning Services</a></li>
+                    <li><a href="sofa-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Sofa Cleaning Services</a></li>
+                    <li><a href="window-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Window Cleaning Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Get In Touch -->
+            <div>
+                <h3 class="text-lg font-bold mb-4 border-b border-gray-800 pb-2">Get In Touch</h3>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-location-dot mr-2 text-amber-500"></i> Road 11, Banani, Dhaka - Bangladesh</p>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-phone mr-2 text-amber-500"></i> +880 1711 223344</p>
+                <p class="text-sm text-gray-400 mb-4"><i class="fa-solid fa-envelope mr-2 text-amber-500"></i> info@brightstreet.bd</p>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 mt-8 pt-4 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+            <p>© 2026 Bright Street Cleaning Services LLC. All rights reserved.</p>
+            <p class="mt-2 md:mt-0">Designed & Developed by <span class="text-amber-500 font-semibold">Mymuna</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Cleaning - Bright Street</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Top Contact Bar -->
+    <div class="bg-[#2196F3] text-white py-2 px-4">
+        <div class="container mx-auto flex flex-wrap justify-between items-center text-sm">
+            <div class="flex items-center space-x-6">
+                <span><i class="fa-solid fa-phone mr-2"></i> +880 1711223344</span>
+                <span><i class="fa-solid fa-envelope mr-2"></i> info@brightstreet.bd</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation Bar with Dropdown -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="text-2xl font-bold text-blue-900 tracking-wider">
+                    <span class="text-blue-600">BRIGHT</span> <span class="text-amber-500">STREET</span>
+                    <p class="text-[10px] text-gray-500 font-normal tracking-normal uppercase">bright-street-cleaning-services</p>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium">
+                <!-- Home -->
+                <a href="../index.html" class="hover:text-blue-600">Home</a>
+
+                <!-- Cleaning Dropdown (Active & Functional with all 9 pages) -->
+                <div class="relative group">
+                    <button class="flex items-center text-green-600 focus:outline-none py-2 cursor-pointer font-medium">
+                        Cleaning <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <!-- Mega Dropdown (3 Columns) -->
+                    <div class="absolute left-0 mt-0 w-[600px] bg-white border border-gray-100 shadow-xl rounded-md hidden group-hover:grid grid-cols-3 gap-2 p-4 z-50">
+                        <div>
+                            <a href="home-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Home Cleaning</a>
+                            <a href="school-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> School Cleaning</a>
+                            <a href="mattress-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Mattress Cleaning</a>
+                        </div>
+                        <div>
+                            <a href="deep-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> DEEP Cleaning</a>
+                            <a href="restaurant-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Restaurant Cleaning</a>
+                            <a href="window-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Window Cleaning</a>
+                        </div>
+                        <div>
+                            <a href="office-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Office Cleaning</a>
+                            <a href="sofa-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Sofa Cleaning</a>
+                            <a href="ironing-services.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Ironing Services</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pest Control (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Pest Control <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+
+                <!-- Maintenance (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Maintenance <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+
+                <!-- Painting Services (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Painting Services <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Specific Page Main Content Area -->
+    <main class="py-12 container mx-auto px-4 min-h-[500px]">
+        
+        <!-- Hero Section -->
+        <section class="bg-white rounded-2xl shadow-md overflow-hidden mb-8 border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 p-8 lg:p-12 space-y-6">
+                    <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
+                        BSGM&CS-LLC Window Cleaning Services in Banani, Dhaka – Crystal Clear Views Guaranteed!
+                    </h1>
+                    <p class="text-lg text-gray-700 font-medium">
+                        Hero Section – Crystal Clear Windows for a Brighter Banani!
+                    </p>
+                    
+                    <!-- Bullet Points -->
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> Eco-Friendly Cleaning Solutions[cite: 10]
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> Available for 24/7 Emergency Service[cite: 10]
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> 100% Satisfaction Guarantee[cite: 10]
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> Same-Day Availability[cite: 10]
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Image Side -->
+                <div class="lg:col-span-5 h-full min-h-[350px] bg-cover bg-center relative" style="background-image: url('../images/window-cleaning-hero.jpg');">
+                    <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent lg:block hidden"></div>
+                </div>
+            </div>
+
+            <!-- Bottom Black Banner inside Section -->
+            <div class="bg-black text-white py-4 px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-sm md:text-base font-medium">
+                    Schedule Your Appointment Today and Enjoy Your Service!
+                </p>
+                <a href="#booking" class="bg-[#2196F3] hover:bg-blue-600 text-white font-semibold px-6 py-2.5 rounded-lg text-sm shadow transition">
+                    GET 15% OFF BSGM&CS-LLC
+                </a>
+            </div>
+        </section>
+
+        <!-- Best Professional Window Cleaning Service Section -->
+        <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Image Side -->
+                <div class="lg:col-span-5">
+                    <img src="../images/window-cleaning-detail.jpg" alt="Window Cleaning Professional" class="rounded-xl shadow-lg w-full object-cover h-[340px]">
+                </div>
+
+                <!-- Right Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-gray-700 leading-relaxed">
+                    <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
+                        Best Professional Window Cleaning Service in Banani, Dhaka
+                    </h2>
+                    <p>
+                        At <span class="font-semibold text-gray-900">BRIGHT STREET GENERAL MAINTENANCE AND CLEANING SERVICES – L.L.C (BSGM&CS-LLC)</span>, we believe every window deserves a clear view[cite: 11]. A freshly cleaned window doesn't just improve how things look, it transforms how your space feels[cite: 11]. Whether you live in a waterfront apartment or manage a commercial tower, BSGM&CS-LLC expert cleaners bring years of local know-how and industry-best tools to each job[cite: 11].
+                    </p>
+                    <p>
+                        We take pride in offering personalized service to our clients across Banani[cite: 11]. From salty coastal buildup to city dust and grime, we know how to tackle every kind of dirt[cite: 11]. Our team is friendly, professional, and detail-oriented, so whether it's a one-time job or scheduled maintenance, you'll always see the BSGM&CS-LLC difference[cite: 11].
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits & Variations Section -->
+        <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12 space-y-8">
+            <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
+                Benefits of Our Window Cleaning Services – Clear Solutions for Every Need[cite: 12].
+            </h2>
+
+            <!-- Residential Window Cleaning -->
+            <div class="space-y-4 pt-4 border-t border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900">Residential Window Cleaning</h3>
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                    There’s something uplifting about sunlight streaming through clean windows[cite: 12]. With BSGM&CS-LLC residential service, your home will feel brighter, fresher, and more open[cite: 12]. We clean both interior and exterior windows, remove hard water spots, dust window screens, and polish balcony glass and mirrors[cite: 12]. We’re gentle with your space and respectful of your time[cite: 12]. Whether it’s a cozy flat or a spacious villa, we treat your home like our own[cite: 12].
+                </p>
+            </div>
+
+            <!-- Commercial High-Rise Cleaning -->
+            <div class="space-y-4 pt-4 border-t border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900">Commercial High-Rise Cleaning</h3>
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                    Your building’s appearance says a lot about your brand, and spotless glass makes a bold statement[cite: 12]. BSGM&CS-LLC handles Banani’s tallest towers with ease, thanks to our certified rope-access and boom-lift technicians[cite: 12]. We clean entire facades, from ground level to rooftop, including any solar panels[cite: 12]. Our team operates discreetly and efficiently to avoid disturbing your staff or visitors[cite: 12]. We help your building stand out with every gleaming pane[cite: 12].
+                </p>
+            </div>
+
+            <!-- Special Event Prep Cleaning -->
+            <div class="space-y-4 pt-4 border-t border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900">Special Event Prep Cleaning</h3>
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                    Hosting an event? Make sure your space shines with BSGM&CS-LLC special event window cleaning[cite: 12]. We’re experts at removing last-minute smudges, dust, and construction residue from windows, mirrors, and glass dividers[cite: 12]. Whether it’s a wedding, launch party, or corporate function, we’ll get the place camera-ready[cite: 12]. And when the guests are gone, we’re happy to return for a post-event touch-up[cite: 12]. With BSGM&CS-LLC, every reflection is picture-perfect[cite: 12].
+                </p>
+            </div>
+        </section>
+
+        <!-- Areas We Serve Section -->
+        <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Image Side -->
+                <div class="lg:col-span-6">
+                    <img src="../images/window-cleaning-rope.jpg" alt="High rise window cleaning" class="rounded-xl shadow-lg w-full object-cover h-[300px]">
+                </div>
+
+                <!-- Right Text Content -->
+                <div class="lg:col-span-6 space-y-4 text-gray-700 leading-relaxed">
+                    <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
+                        Areas We Serve – Across Banani, Dhaka
+                    </h2>
+                    <ul class="space-y-2 text-sm md:text-base">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mr-3 mt-1"></i> 
+                            <span><strong>City Center:</strong> Banani, Gulshan, Baridhara</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mr-3 mt-1"></i> 
+                            <span><strong>Business Districts:</strong> Mohakhali Commercial Area, Uttara Sector 7, Motijheel</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mr-3 mt-1"></i> 
+                            <span><strong>Residential Areas:</strong> Dhanmondi, Uttara, Bashundhara R/A</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mr-3 mt-1"></i> 
+                            <span><strong>New Developments:</strong> Purbachal, Uttara Phase 3, Gulshan Extension</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose BSGM&CS-LLC for Window Cleaning Section -->
+        <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Image Side -->
+                <div class="lg:col-span-6">
+                    <img src="../images/window-cleaning-worker.jpg" alt="Window cleaning expert" class="rounded-xl shadow-lg w-full object-cover h-[320px]">
+                </div>
+
+                <!-- Right Text Content -->
+                <div class="lg:col-span-6 space-y-4 text-gray-700 leading-relaxed">
+                    <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
+                        Why Choose BSGM&CS-LLC for Window Cleaning?
+                    </h2>
+                    <ul class="space-y-2 text-sm md:text-base">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mr-3 mt-1"></i> 
+                            <span><strong>Trusted Experts:</strong> Over a decade of experience in local window cleaning[cite: 14].</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mr-3 mt-1"></i> 
+                            <span><strong>Advanced Water-Fed Pole Systems:</strong> Clean up to 12 stories safely from the ground[cite: 14].</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mr-3 mt-1"></i> 
+                            <span><strong>100% Insured Team:</strong> Your property is fully protected during every job[cite: 14].</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mr-3 mt-1"></i> 
+                            <span><strong>Flexible Scheduling:</strong> We work around your calendar, including early morning & evenings[cite: 14].</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mr-3 mt-1"></i> 
+                            <span><strong>Competitive Pricing:</strong> Premium results, clear rates, no hidden costs[cite: 14].</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+            <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-10 text-center">
+                Testimonials
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 relative flex flex-col justify-between">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-white border border-gray-200 w-10 h-10 rounded-full flex items-center justify-center text-gray-600 shadow-sm">
+                        <i class="fa-solid fa-quote-right text-sm"></i>
+                    </div>
+                    <div class="pt-4 space-y-4">
+                        <div class="w-16 h-16 bg-gray-200 rounded-full mx-auto flex items-center justify-center text-gray-400 text-2xl">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            We did not realize how much of a difference brightening windows would make until BSGM&CS-LLC did ours. The mood in the living room is so much better now. The team was friendly and came on time, and there was no hassle whatsoever. Everything shines. We will be calling again very soon.
+                        </p>
+                        <p class="font-bold text-gray-900 text-sm pt-2">Kareem H., Banani</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 relative flex flex-col justify-between">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-white border border-gray-200 w-10 h-10 rounded-full flex items-center justify-center text-gray-600 shadow-sm">
+                        <i class="fa-solid fa-quote-right text-sm"></i>
+                    </div>
+                    <div class="pt-4 space-y-4">
+                        <div class="w-16 h-16 bg-gray-200 rounded-full mx-auto flex items-center justify-center text-gray-400 text-2xl">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            Our office tower gets dusty fast, and I was impressed with how quickly BSGM&CS-LLC made it all look brand new again. Their high-rise crew was professional and clearly knew what they were doing. No mess, no delays, just clean glass and satisfied staff. Great job, guys.
+                        </p>
+                        <p class="font-bold text-gray-900 text-sm pt-2">Nabeel A., Gulshan</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 relative flex flex-col justify-between">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-white border border-gray-200 w-10 h-10 rounded-full flex items-center justify-center text-gray-600 shadow-sm">
+                        <i class="fa-solid fa-quote-right text-sm"></i>
+                    </div>
+                    <div class="pt-4 space-y-4">
+                        <div class="w-16 h-16 bg-gray-200 rounded-full mx-auto flex items-center justify-center text-gray-400 text-2xl">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            Post-renovation dust was everywhere, especially on the windows. BSGM&CS-LLC got it all off without a scratch. They were courteous, careful around our new furniture, and super efficient. It made the whole house feel finished. I've already recommended them to neighbors.
+                        </p>
+                        <p class="font-bold text-gray-900 text-sm pt-2">Rania M., Baridhara</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Customer FAQ Section -->
+        <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12" x-data="{ activeAccordion: null }">
+            <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-8 text-center">
+                Customer FAQ – Frequently Asked Questions For Window Cleaning Service
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Left Column FAQs -->
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden transition">
+                        <button @click="activeAccordion = activeAccordion === 1 ? null : 1" class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                            <span class="font-semibold text-gray-800 text-sm md:text-base">How often should I get my windows cleaned?</span>
+                            <span class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-bold transition-transform duration-300" :class="{'rotate-45': activeAccordion === 1}">+</span>
+                        </button>
+                        <div x-show="activeAccordion === 1" x-collapse class="px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                            For optimal clarity and maintenance, we recommend getting your windows professionally cleaned at least every 3 to 6 months, depending on your location and exposure to dust or weather conditions.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden transition">
+                        <button @click="activeAccordion = activeAccordion === 2 ? null : 2" class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                            <span class="font-semibold text-gray-800 text-sm md:text-base">Are your products safe for people and pets?</span>
+                            <span class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-bold transition-transform duration-300" :class="{'rotate-45': activeAccordion === 2}">+</span>
+                        </button>
+                        <div x-show="activeAccordion === 2" x-collapse class="px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                            Yes! We exclusively use eco-friendly, non-toxic cleaning solutions that are completely safe for your family, employees, and pets.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden transition">
+                        <button @click="activeAccordion = activeAccordion === 3 ? null : 3" class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                            <span class="font-semibold text-gray-800 text-sm md:text-base">How long does the cleaning take?</span>
+                            <span class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-bold transition-transform duration-300" :class="{'rotate-45': activeAccordion === 3}">+</span>
+                        </button>
+                        <div x-show="activeAccordion === 3" x-collapse class="px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                            The duration depends on the size of your property and the number of windows. Standard residential apartments usually take 1 to 3 hours, while larger commercial projects are scheduled accordingly.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden transition">
+                        <button @click="activeAccordion = activeAccordion === 4 ? null : 4" class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                            <span class="font-semibold text-gray-800 text-sm md:text-base">Do you clean window tracks and screens too?</span>
+                            <span class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-bold transition-transform duration-300" :class="{'rotate-45': activeAccordion === 4}">+</span>
+                        </button>
+                        <div x-show="activeAccordion === 4" x-collapse class="px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                            Yes, we offer comprehensive cleaning that includes wiping down window tracks, frames, and dusting or washing screens upon request.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden transition">
+                        <button @click="activeAccordion = activeAccordion === 5 ? null : 5" class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                            <span class="font-semibold text-gray-800 text-sm md:text-base">Do you clean the balcony glass and railings?</span>
+                            <span class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-bold transition-transform duration-300" :class="{'rotate-45': activeAccordion === 5}">+</span>
+                        </button>
+                        <div x-show="activeAccordion === 5" x-collapse class="px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                            Absolutely! Balcony glass panels, partitions, and railings are fully covered under our standard residential and commercial window cleaning packages.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column FAQs -->
+                <div class="space-y-4">
+                    <!-- FAQ 6 -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden transition">
+                        <button @click="activeAccordion = activeAccordion === 6 ? null : 6" class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                            <span class="font-semibold text-gray-800 text-sm md:text-base">Can you clean high-rise buildings safely?</span>
+                            <span class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-bold transition-transform duration-300" :class="{'rotate-45': activeAccordion === 6}">+</span>
+                        </button>
+                        <div x-show="activeAccordion === 6" x-collapse class="px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                            Yes, we employ certified rope-access technicians and advanced water-fed pole systems to clean high-rise buildings safely and efficiently from the ground or upper levels.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 7 -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden transition">
+                        <button @click="activeAccordion = activeAccordion === 7 ? null : 7" class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                            <span class="font-semibold text-gray-800 text-sm md:text-base">Will the cleaning harm tinted or coated windows?</span>
+                            <span class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-bold transition-transform duration-300" :class="{'rotate-45': activeAccordion === 7}">+</span>
+                        </button>
+                        <div x-show="activeAccordion === 7" x-collapse class="px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                            Not at all. We use non-abrasive tools and specialized gentle solutions specifically designed to protect window tints and protective coatings.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 8 -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden transition">
+                        <button @click="activeAccordion = activeAccordion === 8 ? null : 8" class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                            <span class="font-semibold text-gray-800 text-sm md:text-base">What if it rains after the cleaning?</span>
+                            <span class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-bold transition-transform duration-300" :class="{'rotate-45': activeAccordion === 8}">+</span>
+                        </button>
+                        <div x-show="activeAccordion === 8" x-collapse class="px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                            Rainwater is mostly pure water and usually doesn't spot clean glass. However, we stand by our quality service—if unexpected heavy dust storms or severe weather affect the results shortly after, let us know.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 9 -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden transition">
+                        <button @click="activeAccordion = activeAccordion === 9 ? null : 9" class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                            <span class="font-semibold text-gray-800 text-sm md:text-base">Are your team members insured?</span>
+                            <span class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-bold transition-transform duration-300" :class="{'rotate-45': activeAccordion === 9}">+</span>
+                        </button>
+                        <div x-show="activeAccordion === 9" x-collapse class="px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                            Yes, all our team members are fully trained, certified, and insured so your property and personnel remain completely protected during every service.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 10 -->
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden transition">
+                        <button @click="activeAccordion = activeAccordion === 10 ? null : 10" class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                            <span class="font-semibold text-gray-800 text-sm md:text-base">Do I need to be home during the cleaning?</span>
+                            <span class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-bold transition-transform duration-300" :class="{'rotate-45': activeAccordion === 10}">+</span>
+                        </button>
+                        <div x-show="activeAccordion === 10" x-collapse class="px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                            You don't necessarily need to be home as long as our team has secure access to the areas requiring service. Many clients provide access and return to spotless windows!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Common Footer Section -->
+    <footer class="bg-black text-white pt-12 pb-6">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Company Info -->
+            <div>
+                <h2 class="text-xl font-bold mb-4 text-amber-500">BRIGHT STREET</h2>
+                <p class="text-gray-400 text-sm mb-4">
+                    BRIGHT STREET CLEANING SERVICES is your trusted partner for all professional cleaning and sanitation needs in Bangladesh.
+                </p>
+                <h3 class="font-semibold mb-2">Connect with us</h3>
+                <div class="flex space-x-3 mb-6">
+                    <a href="https://facebook.com" target="_blank" class="bg-blue-600 p-2 rounded text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="bg-pink-600 p-2 rounded text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="bg-gray-700 p-2 rounded text-white"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://tiktok.com" target="_blank" class="bg-red-600 p-2 rounded text-white"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://web.whatsapp.com" target="_blank" class="bg-green-600 p-2 rounded text-white"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Our Services Links -->
+            <div>
+                <h3 class="text-lg font-bold mb-4 border-b border-gray-800 pb-2">Our Services</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="home-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Home Cleaning</a></li>
+                    <li><a href="deep-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Deep Cleaning Services</a></li>
+                    <li><a href="sofa-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Sofa Cleaning Services</a></li>
+                    <li><a href="window-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Window Cleaning Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Get In Touch -->
+            <div>
+                <h3 class="text-lg font-bold mb-4 border-b border-gray-800 pb-2">Get In Touch</h3>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-location-dot mr-2 text-amber-500"></i> Road 11, Banani, Dhaka - Bangladesh</p>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-phone mr-2 text-amber-500"></i> +880 1711 223344</p>
+                <p class="text-sm text-gray-400 mb-4"><i class="fa-solid fa-envelope mr-2 text-amber-500"></i> info@brightstreet.bd</p>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 mt-8 pt-4 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+            <p>© 2026 Bright Street Cleaning Services LLC. All rights reserved.</p>
+            <p class="mt-2 md:mt-0">Designed & Developed by <span class="text-amber-500 font-semibold">Mymuna</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>

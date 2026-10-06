@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Cleaning - Bright Street</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Top Contact Bar -->
+    <div class="bg-[#2196F3] text-white py-2 px-4">
+        <div class="container mx-auto flex flex-wrap justify-between items-center text-sm">
+            <div class="flex items-center space-x-6">
+                <span><i class="fa-solid fa-phone mr-2"></i> +880 1711223344</span>
+                <span><i class="fa-solid fa-envelope mr-2"></i> info@brightstreet.bd</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation Bar with Dropdown -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="text-2xl font-bold text-blue-900 tracking-wider">
+                    <span class="text-blue-600">BRIGHT</span> <span class="text-amber-500">STREET</span>
+                    <p class="text-[10px] text-gray-500 font-normal tracking-normal uppercase">bright-street-cleaning-services</p>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium">
+                <!-- Home -->
+                <a href="../index.html" class="hover:text-blue-600">Home</a>
+
+                <!-- Cleaning Dropdown (Active & Functional with all 9 pages) -->
+                <div class="relative group">
+                    <button class="flex items-center text-green-600 focus:outline-none py-2 cursor-pointer font-medium">
+                        Cleaning <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <!-- Mega Dropdown (3 Columns) -->
+                    <div class="absolute left-0 mt-0 w-[600px] bg-white border border-gray-100 shadow-xl rounded-md hidden group-hover:grid grid-cols-3 gap-2 p-4 z-50">
+                        <div>
+                            <a href="home-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Home Cleaning</a>
+                            <a href="school-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> School Cleaning</a>
+                            <a href="mattress-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Mattress Cleaning</a>
+                        </div>
+                        <div>
+                            <a href="deep-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> DEEP Cleaning</a>
+                            <a href="restaurant-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Restaurant Cleaning</a>
+                            <a href="window-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Window Cleaning</a>
+                        </div>
+                        <div>
+                            <a href="office-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Office Cleaning</a>
+                            <a href="sofa-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Sofa Cleaning</a>
+                            <a href="ironing-services.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Ironing Services</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pest Control (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Pest Control <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+
+                <!-- Maintenance (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Maintenance <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+
+                <!-- Painting Services (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Painting Services <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+   <!-- Specific Page Main Content Area -->
+    <main class="py-12 container mx-auto px-4 min-h-[500px]">
+        
+        <!-- Hero Section -->
+        <section class="bg-white rounded-2xl shadow-md overflow-hidden mb-8 border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 p-8 lg:p-12 space-y-6">
+                    <p class="text-xs text-gray-400 uppercase font-semibold tracking-wider">
+                        BRIGHT STREET - CLEANING SERVICES LLC
+                    </p>
+                    <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
+                        BSGM&CS-LLC Mattress Cleaning Services in Banani, Dhaka – Sleep Safe & Clean!
+                    </h1>
+                    <p class="text-lg text-gray-700 font-medium">
+                        Your Mattress is Dirtier Than You Think – Deep Clean Your Mattress Today!
+                    </p>
+                    
+                    <!-- Bullet Points -->
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> Hospital-Grade Sanitization
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> Available for 24/7 Emergency Service
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> 100% Satisfaction Guarantee
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> Dust & Odor Removal
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Image Side -->
+                <div class="lg:col-span-5 h-full min-h-[350px] bg-cover bg-center relative" style="background-image: url('../images/mattress-cleaning-hero.jpg');">
+                    <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent lg:block hidden"></div>
+                </div>
+            </div>
+
+            <!-- Bottom Black Banner inside Section -->
+            <div class="bg-black text-white py-4 px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-sm md:text-base font-medium">
+                    Schedule Your Appointment Today and Enjoy Your Service!
+                </p>
+                <a href="#booking" class="bg-[#2196F3] hover:bg-blue-600 text-white font-semibold px-6 py-2.5 rounded-lg text-sm shadow transition">
+                    GET 15% OFF BSGM&CS-LLC
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Content Section -->
+        <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <!-- Left Image Side -->
+                <div class="lg:col-span-5 space-y-8">
+                    <img src="../images/mattress-deep-clean.jpg" alt="Mattress Deep Clean" class="rounded-xl shadow-lg w-full object-cover h-[320px]">
+                    <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-blue-900 mb-3">Why Professional Mattress Cleaning Matters</h3>
+                        <ul class="space-y-2 text-gray-700 text-sm leading-relaxed">
+                            <li><strong>Better Sleep Quality:</strong> Remove millions of dust mites so you wake up rested instead of congested.</li>
+                            <li><strong>Asthma & Allergy Relief:</strong> Deep clean eliminates major allergy triggers and studio dust.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Right Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-gray-700 leading-relaxed">
+                    <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
+                        Best Mattress Cleaning Services in Banani, Dhaka
+                    </h2>
+                    <p>
+                        Beds are more than just furniture – they're filters. A typical mattress quietly traps sweat, body oils, dust mites, and allergens over time. These hidden contaminants can disrupt sleep and worsen allergies. At **BRIGHT STREET GENERAL MAINTENANCE AND CLEANING SERVICES - L.L.C**, we specialize in mattress cleaning in Banani, Dhaka using hospital-grade sanitizers and hot steam.
+                    </p>
+                    <p>
+                        Our expert team lifts away stains and odors at the source, so you and your family breathe easy on a fresh, sanitized surface.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12 space-y-8">
+            <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
+                Benefits of BSGM&CS-LLC Mattress Cleaning Services
+            </h2>
+
+            <!-- Standard Mattress Cleaning -->
+            <div class="space-y-3">
+                <h3 class="text-xl font-semibold text-gray-800">1. Standard Mattress Cleaning – Perfect for regular maintenance.</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700 pl-2">
+                    <li><strong>Deep Steam Sanitization:</strong> High-temperature steam kills dust mites and germs immediately.</li>
+                    <li><strong>Stain & Odor Removal:</strong> We pretreat and extract sweat, urine, spills, and surface stains using eco-friendly solutions.</li>
+                    <li><strong>Dust Mite Eradication:</strong> Powerful vacuuming and anti-allergen treatments remove trapped dust mite debris.</li>
+                    <li><strong>Fast Drying:</strong> Our low-moisture method means your bed is dry and ready in just 2–3 hours, not days.</li>
+                </ul>
+            </div>
+
+            <!-- Premium Allergy Treatment -->
+            <div class="space-y-3">
+                <h3 class="text-xl font-semibold text-gray-800">2. Premium Allergy Treatment – For Sensitive Sleepers and Asthma Sufferers.</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700 pl-2">
+                    <li><strong>Medical-Grade Allergen Control:</strong> Our specialized process can reduce dust mite and pet allergens by <strong>90% or more</strong>, providing additional relief.</li>
+                    <li><strong>UV Anti-Bacterial Sanitization:</strong> We use germicidal UV light to kill remaining microbes on the surface.</li>
+                    <li><strong>Encasement & Protector Cleaning:</strong> We wash or apply a fresh hypoallergenic mattress encasement that blocks dust mite allergens.</li>
+                    <li><strong>Hypoallergenic Mattress Protector:</strong> A new allergy-proof cover is zipped over your mattress to seal in cleanliness.</li>
+                </ul>
+            </div>
+
+            <!-- Emergency Stain Removal -->
+            <div class="space-y-3">
+                <h3 class="text-xl font-semibold text-gray-800">3. Emergency Stain Removal – For accidents that can't wait.</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700 pl-2">
+                    <li><strong>2-Hour Rush Service:</strong> We respond quickly to scrub out fresh blood, vomit, urine, or pet accidents before they set in.</li>
+                    <li><strong>Bio-Enzymatic Cleaners:</strong> Special enzyme treatments break down organic stains so they can be wiped away safely.</li>
+                    <li><strong>Pet Accident Treatment:</strong> Enzymes and odor neutralizers eliminate pet urine, feces, and odors completely.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Areas We Cover Section -->
+    <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Left Image Side -->
+            <div class="lg:col-span-6">
+                <img src="../images/mattress-service-area.jpg" alt="Mattress Cleaning Service Areas" class="rounded-xl shadow-lg w-full object-cover h-[340px]">
+            </div>
+
+            <!-- Right Content Side -->
+            <div class="lg:col-span-6 space-y-6 text-gray-700 leading-relaxed">
+                <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
+                    Areas BSGM&CS-LLC Mattress Cleaning Services Serves in Banani, Dhaka.
+                </h2>
+                <p>
+                    <span class="font-semibold text-gray-800">BSGM&CS-LLC</span> provides professional mattress cleaning all over Banani and surrounding areas in Dhaka, from commercial hotels to residential apartments and luxury villas. Wherever you are, our expert mattress cleaners arrive on time with top-quality service.
+                </p>
+                <p class="font-semibold text-gray-900">Areas we cover:</p>
+                <ul class="space-y-2 text-sm text-gray-600 pl-2">
+                    <li>• <strong class="text-gray-800">Commercial Hubs:</strong> Banani Commercial Area, Gulshan-1, Gulshan-2, Mohakhali</li>
+                    <li>• <strong class="text-gray-800">Residential Areas:</strong> Banani DOHS, Baridhara, Uttara, Dhanmondi</li>
+                    <li>• <strong class="text-gray-800">Apartments & Condos:</strong> Lakeview apartments, Heights residences, City complexes</li>
+                    <li>• <strong class="text-gray-800">Suburbs & Environs:</strong> Bashundhara R/A, Niketan, Mirpur DOHS</li>
+                </ul>
+                <p class="text-sm text-gray-500 pt-2 italic">
+                    Whether you're at home, in a villa, or in a hotel, our team is ready to serve you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Left Image Side -->
+            <div class="lg:col-span-6">
+                <img src="../images/mattress-why-choose-us.jpg" alt="Why Choose BSGM&CS-LLC" class="rounded-xl shadow-lg w-full object-cover h-[380px]">
+            </div>
+
+            <!-- Right Content Side -->
+            <div class="lg:col-span-6 space-y-6 text-gray-700 leading-relaxed">
+                <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
+                    Why Choose BSGM&CS-LLC for Mattress Cleaning?
+                </h2>
+                <p>
+                    We’ve been deep-cleaning mattresses in Dhaka for years, making us experts at restoring your bed's freshness and hygiene. Whether dealing with daily wear or tough stains, we deliver consistent, excellent services every time.
+                </p>
+                <ul class="space-y-3 text-sm text-gray-600">
+                    <li>• <strong class="text-gray-800">Years of Experience:</strong> We know exactly how to handle mattresses of every type, removing dirt and allergens without damaging the fabric.</li>
+                    <li>• <strong class="text-gray-800">Child- and Pet-Safe:</strong> We use zero-toxic, chemical-free products that are safe for your family and pets.</li>
+                    <li>• <strong class="text-gray-800">Medical-Grade Results:</strong> Our cleaning methods are recommended by allergists and have been proven to reduce allergens significantly.</li>
+                    <li>• <strong class="text-gray-800">Affordable Pricing:</strong> Professional mattress cleaning that's far cheaper than buying a new mattress.</li>
+                    <li>• <strong class="text-gray-800">Satisfaction Guarantee:</strong> If you're not satisfied, we promise to re-clean your mattress free of charge.</li>
+                </ul>
+                <p class="text-xs font-semibold text-blue-600 uppercase tracking-wide pt-2">
+                    AT BRIGHT STREET GENERAL MAINTENANCE AND CLEANING SERVICES
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-14 bg-gray-50 rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+        <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-10 text-center">
+            Testimonials
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative flex flex-col justify-between">
+                <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-gray-100 p-3 rounded-full border border-gray-200">
+                    <i class="fa-solid fa-quote-right text-gray-500 text-lg"></i>
+                </div>
+                <div class="pt-4 space-y-4">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-gray-400 font-bold text-xl">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm italic leading-relaxed text-center">
+                        “My daughter’s allergies were getting worse, so we decided to try a professional cleaning. BSGM&CS-LLC was great! They arrived on time, explained their allergy treatment, and got to work immediately. Within a few days, we saw a major improvement in her sleep. I’m so glad we called them.”
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-gray-100 text-center">
+                    <p class="font-bold text-gray-900 text-sm">Tariq M.</p>
+                    <p class="text-xs text-gray-500">Banani DOHS, Dhaka</p>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative flex flex-col justify-between">
+                <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-gray-100 p-3 rounded-full border border-gray-200">
+                    <i class="fa-solid fa-quote-right text-gray-500 text-lg"></i>
+                </div>
+                <div class="pt-4 space-y-4">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-gray-400 font-bold text-xl">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm italic leading-relaxed text-center">
+                        “Our dog had an accident on the bed the night before guests were due to arrive. I panicked and called BSGM&CS-LLC. They were at our place within two hours, cleaned everything thoroughly, and even deodorized the mattress. The technician was professional and kind. I can’t thank them enough for saving the day.”
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-gray-100 text-center">
+                    <p class="font-bold text-gray-900 text-sm">Nasir H.</p>
+                    <p class="text-xs text-gray-500">Gulshan-2, Dhaka</p>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative flex flex-col justify-between">
+                <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-gray-100 p-3 rounded-full border border-gray-200">
+                    <i class="fa-solid fa-quote-right text-gray-500 text-lg"></i>
+                </div>
+                <div class="pt-4 space-y-4">
+                    <div class="flex justify-center mb-4">
+                        <div class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-gray-400 font-bold text-xl">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm italic leading-relaxed text-center">
+                        “I thought my mattress was beyond saving, it had years of stains and wear. But the BSGM&CS-LLC team did their magic. The steam cleaning made it feel brand new again. It dried quickly, and I didn’t have to worry about harsh chemicals around my kids. I’m seriously impressed and have already told my neighbors.”
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-gray-100 text-center">
+                    <p class="font-bold text-gray-900 text-sm">Ahmed Z.</p>
+                    <p class="text-xs text-gray-500">Baridhara, Dhaka</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer FAQ Section -->
+    <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+        <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-8 text-center">
+            Customer FAQ – Frequently Asked Questions For Mattress Cleaning Service
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- FAQ Column 1 -->
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>How often should I get my mattress professionally cleaned?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-3">
+                        <span class="font-semibold text-gray-800">Answer:</span> It is recommended to get your mattress professionally deep cleaned at least every 6 months to eliminate dust mites, allergens, and hidden bacteria.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>How long will it take for my mattress to dry?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-3">
+                        <span class="font-semibold text-gray-800">Answer:</span> Thanks to our advanced low-moisture extraction and high-power vacuuming, your mattress typically dries completely within 2 to 3 hours.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Can you remove old urine, blood, or sweat stains?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-3">
+                        <span class="font-semibold text-gray-800">Answer:</span> Yes, we use specialized bio-enzymatic pre-treatments to break down and lift organic stains like urine, blood, and sweat effectively.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Will there be any chemical smell left after cleaning?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-3">
+                        <span class="font-semibold text-gray-800">Answer:</span> No, we strictly use eco-friendly, non-toxic, and odorless cleaning solutions that leave your mattress smelling fresh and natural.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>What happens if I’m not satisfied with the cleaning?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-3">
+                        <span class="font-semibold text-gray-800">Answer:</span> We offer a 100% satisfaction guarantee. If you are not fully satisfied, we will re-clean your mattress free of charge.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Column 2 -->
+            <div class="space-y-4">
+                <!-- FAQ Item 6 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Is the cleaning process safe for children and pets?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-3">
+                        <span class="font-semibold text-gray-800">Answer:</span> Absolutely! Our products are 100% child and pet-safe, hypoallergenic, and free from harsh chemicals.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Do you clean all types and sizes of mattresses?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-3">
+                        <span class="font-semibold text-gray-800">Answer:</span> Yes, we clean single, double, queen, king-size, memory foam, and custom mattresses of all brands and models.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 8 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Will mattress cleaning help with allergies or asthma?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-3">
+                        <span class="font-semibold text-gray-800">Answer:</span> Yes, removing trapped dust mites, pollen, and pet dander significantly reduces indoor allergy and asthma triggers.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 9 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Do you offer mattress covers or protectors, too?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-3">
+                        <span class="font-semibold text-gray-800">Answer:</span> Yes, we provide and install premium hypoallergenic mattress encasements and protectors upon request.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 10 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>How should I prepare before your team shows up?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-3">
+                        <span class="font-semibold text-gray-800">Answer:</span> Simply strip all bedsheets, pillowcases, and blankets off the mattress. Our team will handle the rest!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Reviews Section -->
+    <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Left Company Info & Rating Card -->
+            <div class="lg:col-span-4 bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center space-y-4">
+                <div class="w-20 h-20 mx-auto bg-white rounded-xl shadow-sm flex items-center justify-center p-2 border border-gray-100">
+                    <img src="../images/company-logo.jpg" alt="Company Logo" class="max-h-full object-contain">
+                </div>
+                <h3 class="font-bold text-gray-900 text-base leading-snug">
+                    BRIGHT STREET GENERAL MAINTENANCE AND CLEANING SERVICES - L.L.C
+                </h3>
+                <div class="flex justify-center text-yellow-400 space-x-1 text-lg">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-gray-600 text-sm font-medium">263 Google reviews</p>
+                <a href="#" class="inline-block bg-white border border-gray-300 hover:bg-gray-100 text-gray-800 font-semibold px-6 py-2.5 rounded-lg text-sm shadow-sm transition">
+                    Write a review
+                </a>
+            </div>
+
+            <!-- Right Reviews Cards Container -->
+            <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 relative flex flex-col justify-between space-y-4">
+                    <div class="absolute top-6 right-6 text-blue-500 text-xl">
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <img src="../images/reviewer-svitlana.jpg" alt="Svitlana Hurina" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-sm flex items-center">
+                                Svitlana Hurina <i class="fa-solid fa-circle-check text-blue-500 ml-1.5 text-xs"></i>
+                            </h4>
+                            <p class="text-xs text-gray-500">3 September 2026</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 text-sm space-x-0.5">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        “Gigi is amazing lady and professional! I like how she is dedicated and focused. I appreciate and recommend Gigi 😊”
+                    </p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 relative flex flex-col justify-between space-y-4">
+                    <div class="absolute top-6 right-6 text-blue-500 text-xl">
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-teal-700 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                            M
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-sm flex items-center">
+                                Molham Khwis <i class="fa-solid fa-circle-check text-blue-500 ml-1.5 text-xs"></i>
+                            </h4>
+                            <p class="text-xs text-gray-500">22 August 2026</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 text-sm space-x-0.5">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        “Maintenance and cleaning service is very good, highly professional team and quick response time.”
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download the App Section -->
+    <section class="py-16 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Left Text & Download Buttons -->
+            <div class="lg:col-span-6 space-y-6">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                    Download the app. <br>Easily Manage Your Bookings.
+                </h2>
+                <p class="text-gray-700 text-base leading-relaxed">
+                    Schedule and manage your appointments, check your professional profile and ratings, explore the latest offers, and so much more.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <!-- App Store Badge -->
+                    <a href="#" class="inline-block">
+                        <img src="../images/app-store-badge.jpg" alt="Download on the App Store" class="h-12 object-contain rounded-lg shadow-sm">
+                    </a>
+                    <!-- Google Play Badge -->
+                    <a href="#" class="inline-block">
+                        <img src="../images/google-play-badge.jpg" alt="Get it on Google Play" class="h-12 object-contain rounded-lg shadow-sm">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right App Mockup Images -->
+            <div class="lg:col-span-6 flex justify-center lg:justify-end space-x-4">
+                <img src="../images/app-mockup-login.jpg" alt="App Login Screen" class="w-[180px] sm:w-[220px] rounded-3xl shadow-xl border-4 border-gray-800 object-cover">
+                <img src="../images/app-mockup-home.jpg" alt="App Home Screen" class="w-[180px] sm:w-[220px] rounded-3xl shadow-xl border-4 border-gray-800 object-cover mt-6 lg:mt-12">
+            </div>
+        </div>
+    </section>
+
+    <!-- Built-in JavaScript for FAQ Toggle -->
+    <script>
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            // Toggle visibility of content
+            content.classList.toggle('hidden');
+            
+            // Toggle plus/minus icon
+            if (content.classList.contains('hidden')) {
+                icon.classList.remove('fa-minus');
+                icon.classList.add('fa-plus');
+            } else {
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
+            }
+        }
+    </script>
+
+    </main>
+
+    <!-- Common Footer Section -->
+    <footer class="bg-black text-white pt-12 pb-6">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Company Info -->
+            <div>
+                <h2 class="text-xl font-bold mb-4 text-amber-500">BRIGHT STREET</h2>
+                <p class="text-gray-400 text-sm mb-4">
+                    BRIGHT STREET CLEANING SERVICES is your trusted partner for all professional cleaning and sanitation needs in Bangladesh.
+                </p>
+                <h3 class="font-semibold mb-2">Connect with us</h3>
+                <div class="flex space-x-3 mb-6">
+                    <a href="https://facebook.com" target="_blank" class="bg-blue-600 p-2 rounded text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="bg-pink-600 p-2 rounded text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="bg-gray-700 p-2 rounded text-white"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://tiktok.com" target="_blank" class="bg-red-600 p-2 rounded text-white"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://web.whatsapp.com" target="_blank" class="bg-green-600 p-2 rounded text-white"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Our Services Links -->
+            <div>
+                <h3 class="text-lg font-bold mb-4 border-b border-gray-800 pb-2">Our Services</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="home-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Home Cleaning</a></li>
+                    <li><a href="deep-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Deep Cleaning Services</a></li>
+                    <li><a href="sofa-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Sofa Cleaning Services</a></li>
+                    <li><a href="window-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Window Cleaning Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Get In Touch -->
+            <div>
+                <h3 class="text-lg font-bold mb-4 border-b border-gray-800 pb-2">Get In Touch</h3>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-location-dot mr-2 text-amber-500"></i> Road 11, Banani, Dhaka - Bangladesh</p>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-phone mr-2 text-amber-500"></i> +880 1711 223344</p>
+                <p class="text-sm text-gray-400 mb-4"><i class="fa-solid fa-envelope mr-2 text-amber-500"></i> info@brightstreet.bd</p>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 mt-8 pt-4 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+            <p>© 2026 Bright Street Cleaning Services LLC. All rights reserved.</p>
+            <p class="mt-2 md:mt-0">Designed & Developed by <span class="text-amber-500 font-semibold">Mymuna</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>

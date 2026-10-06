@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Cleaning - Bright Street</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Top Contact Bar -->
+    <div class="bg-[#2196F3] text-white py-2 px-4">
+        <div class="container mx-auto flex flex-wrap justify-between items-center text-sm">
+            <div class="flex items-center space-x-6">
+                <span><i class="fa-solid fa-phone mr-2"></i> +880 1711223344</span>
+                <span><i class="fa-solid fa-envelope mr-2"></i> info@brightstreet.bd</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation Bar with Dropdown -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="text-2xl font-bold text-blue-900 tracking-wider">
+                    <span class="text-blue-600">BRIGHT</span> <span class="text-amber-500">STREET</span>
+                    <p class="text-[10px] text-gray-500 font-normal tracking-normal uppercase">bright-street-cleaning-services</p>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium">
+                <!-- Home -->
+                <a href="../index.html" class="hover:text-blue-600">Home</a>
+
+                <!-- Cleaning Dropdown (Active & Functional with all 9 pages) -->
+                <div class="relative group">
+                    <button class="flex items-center text-green-600 focus:outline-none py-2 cursor-pointer font-medium">
+                        Cleaning <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <!-- Mega Dropdown (3 Columns) -->
+                    <div class="absolute left-0 mt-0 w-[600px] bg-white border border-gray-100 shadow-xl rounded-md hidden group-hover:grid grid-cols-3 gap-2 p-4 z-50">
+                        <div>
+                            <a href="home-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Home Cleaning</a>
+                            <a href="school-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> School Cleaning</a>
+                            <a href="mattress-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Mattress Cleaning</a>
+                        </div>
+                        <div>
+                            <a href="deep-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> DEEP Cleaning</a>
+                            <a href="restaurant-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Restaurant Cleaning</a>
+                            <a href="window-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Window Cleaning</a>
+                        </div>
+                        <div>
+                            <a href="office-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Office Cleaning</a>
+                            <a href="sofa-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Sofa Cleaning</a>
+                            <a href="ironing-services.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Ironing Services</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pest Control (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Pest Control <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+
+                <!-- Maintenance (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Maintenance <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+
+                <!-- Painting Services (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Painting Services <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+   <!-- Specific Page Main Content Area -->
+    <main class="py-12 container mx-auto px-4 min-h-[500px]">
+        
+        <!-- Hero Section based on Screenshot 1 -->
+        <section class="bg-white rounded-2xl shadow-md overflow-hidden mb-8 border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 p-8 lg:p-12 space-y-6">
+                    <p class="text-xs text-gray-400 uppercase font-semibold tracking-wider">
+                        BRIGHT STREET - CLEANING SERVICES LLC
+                    </p>
+                    <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
+                        BSGM&CS-LLC School Cleaning Services in Banani, Dhaka – Safer, Healthier Learning Environments!
+                    </h1>
+                    <p class="text-lg text-gray-700 font-medium">
+                        UAE's #1 Licensed & Reliable School Cleaning Company
+                    </p>
+                    
+                    <!-- Bullet Points -->
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> Child-Safe & Eco-Friendly Products
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> Available for 24/7 Emergency Service
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> Daily & Deep Cleaning Programs
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> Specialized Disinfection Services
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Image Side -->
+                <div class="lg:col-span-5 h-full min-h-[350px] bg-cover bg-center relative" style="background-image: url('../images/school-cleaning-team.jpg');">
+                    <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent lg:block hidden"></div>
+                </div>
+            </div>
+
+            <!-- Bottom Black Banner inside Section (from screenshot) -->
+            <div class="bg-black text-white py-4 px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-sm md:text-base font-medium">
+                    Schedule Your Appointment Today and Enjoy Your Service!
+                </p>
+                <a href="#booking" class="bg-[#2196F3] hover:bg-blue-600 text-white font-semibold px-6 py-2.5 rounded-lg text-sm shadow transition">
+                    GET 15% OFF BSGM&CS-LLC
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Content Section based on Screenshot 2 -->
+        <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <!-- Left Image Side -->
+                <div class="lg:col-span-4 space-y-8">
+                    <img src="../images/science-lab-cleaning.jpg" alt="Science Lab Cleaning" class="rounded-xl shadow-lg w-full object-cover h-[300px]">
+                    <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-blue-900 mb-3">Why Professional School Cleaning Matters</h3>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            Clean schools aren't just about appearance; they affect learning, attendance, and mental health. Professional school cleaning is essential for maintaining a hygienic and productive environment.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Right Text Content -->
+                <div class="lg:col-span-8 space-y-6 text-gray-700 leading-relaxed">
+                    <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
+                        Best School Cleaning Services in Banani, Dhaka.
+                    </h2>
+                    <p>
+                        At **BRIGHT STREET GENERAL MAINTENANCE AND CLEANING SERVICES - L.L.C**, clean schools build strong minds. Whether it's a nursery classroom, a busy university hallway, or a science lab, every corner of your educational space deserves professional care. That's why BSGM&CS-LLC provides top-tier school cleaning services in Banani, Dhaka.
+                    </p>
+                    <p>
+                        Our cleaning teams not only clean but also disinfect and sanitize, ensuring every classroom is a safe space for students. With flexible scheduling, kid-safe cleaning solutions, and professionally trained staff, we help you maintain not only a clean space but also a secure and hospitable environment.
+                    </p>
+                </div>
+            </div>
+        </section>
+<!-- Benefits Section (Screenshot 1) -->
+    <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12 space-y-8">
+        <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">
+            Benefits of BSGM&CS-LLC School Cleaning Services – Customized for Education
+        </h2>
+
+        <!-- Daily School Cleaning -->
+        <div class="space-y-2">
+            <h3 class="text-xl font-semibold text-gray-800">Daily School Cleaning</h3>
+            <p class="text-gray-700 leading-relaxed">
+                Our daily school cleaning services are designed to keep your school running smoothly and looking fresh every single day. We focus on high-touch and high-traffic areas, ensuring desks, chairs, door handles, and shared surfaces are disinfected regularly to minimize the spread of germs. Playgrounds, gymnasiums, and hallways are swept, sanitized, and maintained with care.
+            </p>
+        </div>
+
+        <!-- Term-Time Deep Cleaning -->
+        <div class="space-y-2">
+            <h3 class="text-xl font-semibold text-gray-800">Term-Time Deep Cleaning</h3>
+            <p class="text-gray-700 leading-relaxed">
+                When schools close for term breaks or holidays, our deep cleaning team steps in to reach areas that daily cleaning may miss—such as scrubbing every corner, lifting rugs, and polishing surfaces. This includes carpet shampooing, high-level dusting for ceiling vents and fans, and stripping, waxing, and polishing hard floors.
+            </p>
+        </div>
+
+        <!-- Special Education Cleaning -->
+        <div class="space-y-2">
+            <h3 class="text-xl font-semibold text-gray-800">Special Education Cleaning</h3>
+            <p class="text-gray-700 leading-relaxed">
+                Sometimes, schools need a special deep cleaning right after finishing construction on a new wing or classroom. If there's an unexpected spill involving paint, chemicals, or other materials, our emergency response team is just a call away, bringing experience, flexibility, and speed.
+            </p>
+        </div>
+    </section>
+
+    <!-- Areas We Serve Section (Screenshot 2) -->
+    <section class="py-12 bg-gray-50 rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Left Image Side -->
+            <div class="lg:col-span-5">
+                <img src="../images/school-floor-buffing.jpg" alt="School Floor Buffing" class="rounded-xl shadow-md w-full object-cover h-[320px]">
+            </div>
+            <!-- Right Text Content -->
+            <div class="lg:col-span-7 space-y-4">
+                <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
+                    Areas We Serve – Schools Cleaning Services in Banani, Dhaka
+                </h2>
+                <p class="text-gray-700 leading-relaxed text-sm md:text-base">
+                    Regardless of your school's location in Dhaka, BSGM&CS-LLC operates in nearly every area. From small nurseries to large universities, we've served campuses of every size.
+                </p>
+                <div class="space-y-2 text-sm text-gray-700">
+                    <p><strong>City Schools:</strong> Banani, Gulshan, Baridhara, Uttara</p>
+                    <p><strong>Community Schools:</strong> Khalifa City equivalents, local residential campuses</p>
+                    <p><strong>International Schools:</strong> Premium private campuses and coaching hubs</p>
+                    <p><strong>Technical Institutes:</strong> Specialized training centers and labs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section with Kids Washing Hands (Screenshot 3) -->
+    <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Left Image Side -->
+            <div class="lg:col-span-5">
+                <img src="../images/kids-washing-hands-school.jpg" alt="Kids Washing Hands" class="rounded-xl shadow-md w-full object-cover h-[350px]">
+            </div>
+            <!-- Right Text Content -->
+            <div class="lg:col-span-7 space-y-4">
+                <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
+                    Why Choose BSGM&CS-LLC for School Cleaning in Banani, Dhaka?
+                </h2>
+                <ul class="space-y-3 text-gray-700 text-sm md:text-base">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span><strong>Educational Cleaning Experts:</strong> We know how schools operate, from morning rush to afternoon pickup.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span><strong>Trusted Teams:</strong> All staff are background-checked and trained in child-safe protocols.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span><strong>Eco & Kid-Safe Products:</strong> We only use non-toxic, odor-free cleaners that are safe for children.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span><strong>Flexible Hours:</strong> Need us after hours, on weekends, or early mornings? No problem.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span><strong>Affordable Pricing:</strong> What you see is what you pay, no hidden fees ever.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+  <!-- School Cleaning FAQ Section with Built-in Toggle Script -->
+    <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+        <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-8 text-center">
+            School Cleaning FAQ – Frequently Asked Questions
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- FAQ Column 1 -->
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>How much do school cleaning services cost in Banani, Dhaka?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-3">
+                        <span class="font-semibold text-gray-800">Answer:</span> Pricing depends on the size of the campus, classrooms, frequency (daily or deep cleaning), and specific requirements. We offer transparent, affordable packages with no hidden fees.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Are your cleaning products safe for kids and those with allergies?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-3">
+                        <span class="font-semibold text-gray-800">Answer:</span> Yes, we strictly use non-toxic, eco-friendly, and hypoallergenic cleaning agents that ensure complete safety for students, children, and staff.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>How do you ensure quality control?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-3">
+                        <span class="font-semibold text-gray-800">Answer:</span> Our supervisors conduct routine inspections and follow strict checklists to maintain high standards of cleanliness and hygiene across all school zones.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Is deep cleaning available only during breaks?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-3">
+                        <span class="font-semibold text-gray-800">Answer:</span> While term breaks are ideal for thorough deep cleaning, we can also schedule specialized deep cleaning during weekends or selected off-hours upon request.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Column 2 -->
+            <div class="space-y-4">
+                <!-- FAQ Item 5 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Do you clean during school hours or after?</span>
+                        <i class="fa-solid fa-minus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-3">
+                        <span class="font-semibold text-gray-800">Answer:</span> Yes, we clean according to your schedule. Whether it's early mornings, between classes, after school, or weekends, we adapt to minimize classroom disruption and ensure student safety.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>What types of schools do you clean?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-3">
+                        <span class="font-semibold text-gray-800">Answer:</span> We clean nurseries, primary schools, high schools, universities, technical institutes, and coaching centers of all sizes.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Do you offer emergency cleaning services?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-3">
+                        <span class="font-semibold text-gray-800">Answer:</span> Yes, our emergency response team is available for urgent cleanup needs such as post-construction messes or unexpected spills.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 8 -->
+                <div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-semibold text-gray-800 flex justify-between items-center focus:outline-none">
+                        <span>Are your staff trained to work in child-sensitive environments?</span>
+                        <i class="fa-solid fa-plus text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-200 pt-3">
+                        <span class="font-semibold text-gray-800">Answer:</span> Absolutely, all cleaning staff undergo strict background verification and are specifically trained in child-safe behavior and protocols.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Built-in JavaScript for FAQ Toggle -->
+    <script>
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            // Toggle visibility of content
+            content.classList.toggle('hidden');
+            
+            // Toggle plus/minus icon
+            if (content.classList.contains('hidden')) {
+                icon.classList.remove('fa-minus');
+                icon.classList.add('fa-plus');
+            } else {
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
+            }
+        }
+    </script>
+    <!-- Download App Section -->
+    <section class="py-16 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Left Text & Download Buttons -->
+            <div class="lg:col-span-6 space-y-6">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+                    Download the app. <br>Easily Manage Your Bookings.
+                </h2>
+                <p class="text-gray-700 text-base leading-relaxed">
+                    Schedule and manage your appointments, check your professional profile and ratings, explore the latest offers, and so much more[cite: 13].
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <!-- App Store Badge -->
+                    <a href="#" class="inline-block">
+                        <img src="../images/app-store-badge.jpg" alt="Download on the App Store" class="h-12 object-contain rounded-lg shadow-sm">
+                    </a>
+                    <!-- Google Play Badge -->
+                    <a href="#" class="inline-block">
+                        <img src="../images/google-play-badge.jpg" alt="Get it on Google Play" class="h-12 object-contain rounded-lg shadow-sm">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right App Mockup Images -->
+            <div class="lg:col-span-6 flex justify-center lg:justify-end space-x-4">
+                <img src="../images/app-mockup-login.jpg" alt="App Login Screen" class="w-[180px] sm:w-[220px] rounded-3xl shadow-xl border-4 border-gray-800 object-cover">
+                <img src="../images/app-mockup-home.jpg" alt="App Home Screen" class="w-[180px] sm:w-[220px] rounded-3xl shadow-xl border-4 border-gray-800 object-cover mt-6 lg:mt-12">
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Common Footer Section -->
+    <footer class="bg-black text-white pt-12 pb-6">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Company Info -->
+            <div>
+                <h2 class="text-xl font-bold mb-4 text-amber-500">BRIGHT STREET</h2>
+                <p class="text-gray-400 text-sm mb-4">
+                    BRIGHT STREET CLEANING SERVICES is your trusted partner for all professional cleaning and sanitation needs in Bangladesh.
+                </p>
+                <h3 class="font-semibold mb-2">Connect with us</h3>
+                <div class="flex space-x-3 mb-6">
+                    <a href="https://facebook.com" target="_blank" class="bg-blue-600 p-2 rounded text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="bg-pink-600 p-2 rounded text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="bg-gray-700 p-2 rounded text-white"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://tiktok.com" target="_blank" class="bg-red-600 p-2 rounded text-white"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://web.whatsapp.com" target="_blank" class="bg-green-600 p-2 rounded text-white"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Our Services Links -->
+            <div>
+                <h3 class="text-lg font-bold mb-4 border-b border-gray-800 pb-2">Our Services</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="home-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Home Cleaning</a></li>
+                    <li><a href="deep-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Deep Cleaning Services</a></li>
+                    <li><a href="sofa-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Sofa Cleaning Services</a></li>
+                    <li><a href="window-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Window Cleaning Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Get In Touch -->
+            <div>
+                <h3 class="text-lg font-bold mb-4 border-b border-gray-800 pb-2">Get In Touch</h3>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-location-dot mr-2 text-amber-500"></i> Road 11, Banani, Dhaka - Bangladesh</p>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-phone mr-2 text-amber-500"></i> +880 1711 223344</p>
+                <p class="text-sm text-gray-400 mb-4"><i class="fa-solid fa-envelope mr-2 text-amber-500"></i> info@brightstreet.bd</p>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 mt-8 pt-4 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+            <p>© 2026 Bright Street Cleaning Services LLC. All rights reserved.</p>
+            <p class="mt-2 md:mt-0">Designed & Developed by <span class="text-amber-500 font-semibold">Mymuna</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>

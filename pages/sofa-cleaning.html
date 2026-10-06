@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Cleaning - Bright Street</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Top Contact Bar -->
+    <div class="bg-[#2196F3] text-white py-2 px-4">
+        <div class="container mx-auto flex flex-wrap justify-between items-center text-sm">
+            <div class="flex items-center space-x-6">
+                <span><i class="fa-solid fa-phone mr-2"></i> +880 1711223344</span>
+                <span><i class="fa-solid fa-envelope mr-2"></i> info@brightstreet.bd</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation Bar with Dropdown -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="text-2xl font-bold text-blue-900 tracking-wider">
+                    <span class="text-blue-600">BRIGHT</span> <span class="text-amber-500">STREET</span>
+                    <p class="text-[10px] text-gray-500 font-normal tracking-normal uppercase">bright-street-cleaning-services</p>
+                </div>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium">
+                <!-- Home -->
+                <a href="../index.html" class="hover:text-blue-600">Home</a>
+
+                <!-- Cleaning Dropdown (Active & Functional with all 9 pages) -->
+                <div class="relative group">
+                    <button class="flex items-center text-green-600 focus:outline-none py-2 cursor-pointer font-medium">
+                        Cleaning <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <!-- Mega Dropdown (3 Columns) -->
+                    <div class="absolute left-0 mt-0 w-[600px] bg-white border border-gray-100 shadow-xl rounded-md hidden group-hover:grid grid-cols-3 gap-2 p-4 z-50">
+                        <div>
+                            <a href="home-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Home Cleaning</a>
+                            <a href="school-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> School Cleaning</a>
+                            <a href="mattress-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Mattress Cleaning</a>
+                        </div>
+                        <div>
+                            <a href="deep-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> DEEP Cleaning</a>
+                            <a href="restaurant-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Restaurant Cleaning</a>
+                            <a href="window-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Window Cleaning</a>
+                        </div>
+                        <div>
+                            <a href="office-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Office Cleaning</a>
+                            <a href="sofa-cleaning.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Sofa Cleaning</a>
+                            <a href="ironing-services.html" class="block px-2 py-1.5 text-xs text-gray-700 hover:bg-gray-100 hover:text-green-600"><i class="fa-solid fa-angles-right text-green-600 mr-1 text-[10px]"></i> Ironing Services</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pest Control (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Pest Control <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+
+                <!-- Maintenance (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Maintenance <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+
+                <!-- Painting Services (Non-functional) -->
+                <div class="text-gray-400 cursor-not-allowed select-none py-2 flex items-center">
+                    Painting Services <i class="fa-solid fa-chevron-down ml-1 text-xs"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+   <!-- Specific Page Main Content Area -->
+    <main class="py-12 container mx-auto px-4 min-h-[500px]">
+        
+        <!-- Hero Section -->
+        <section class="bg-white rounded-2xl shadow-md overflow-hidden mb-8 border border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 p-8 lg:p-12 space-y-6">
+                    <h1 class="text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
+                        BSGM&CS-LLC Sofa Cleaning Services in Banani, Dhaka – Revive Your Furniture Like New!
+                    </h1>
+                    <p class="text-lg text-gray-700 font-medium">
+                        First Impressions Start With Your Furniture![cite: 15]
+                    </p>
+                    
+                    <!-- Bullet Points -->
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> Eco-Friendly & Child-Safe Products[cite: 15]
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> Same-Day Service Available[cite: 15]
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> 100% Satisfaction Guarantee[cite: 15]
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check text-green-500 mr-3"></i> Licensed and Background-checked[cite: 15]
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Image Side -->
+                <div class="lg:col-span-5 h-full min-h-[350px] bg-cover bg-center relative" style="background-image: url('../images/sofa-cleaning-hero.jpg');">
+                    <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent lg:block hidden"></div>
+                </div>
+            </div>
+
+            <!-- Bottom Black Banner inside Section -->
+            <div class="bg-black text-white py-4 px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-sm md:text-base font-medium">
+                    Schedule Your Appointment Today and Enjoy Your Service![cite: 15]
+                </p>
+                <a href="#booking" class="bg-[#2196F3] hover:bg-blue-600 text-white font-semibold px-6 py-2.5 rounded-lg text-sm shadow transition">
+                    GET 15% OFF BSGM&CS-LLC[cite: 15]
+                </a>
+            </div>
+        </section>
+
+        <!-- Why You Need a Professional Sofa Cleaning Service Section -->
+        <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Image Side -->
+                <div class="lg:col-span-5">
+                    <img src="../images/sofa-cleaning-detail.jpg" alt="Sofa Cleaning Service" class="rounded-xl shadow-lg w-full object-cover h-[340px]">
+                </div>
+
+                <!-- Right Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-gray-700 leading-relaxed">
+                    <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
+                        Why You Need a Professional Sofa Cleaning Service
+                    </h2>
+                    <p class="text-sm md:text-base">
+                        Your sofa goes through a lot. Daily use means it absorbs sweat, food leftovers, pet hair, and even dust over time. Regular vacuuming helps with surface cleaning, but it doesn't deep-clean the fabric. Hidden grime and allergens don't go away with regular vacuuming. That's why you need professional cleaning services! A professional sofa cleaning removes trapped dust, bacteria, and allergens, and makes your home healthier. It also removes tough stains, restores faded colors, and brings back your sofa's original beauty. Nothing impresses guests more than a fresh, spotless sofa. So, if you want a cleaner, fresher, and long-lasting sofa, professional cleaning is a must[cite: 16].
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits of BSGM&CS-LLC Sofa Cleaning Services Section -->
+        <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12 space-y-8">
+            <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
+                Benefits of BSGM&CS-LLC Sofa Cleaning Services[cite: 16]
+            </h2>
+
+            <!-- Advanced Steam & Dry Cleaning -->
+            <div class="space-y-3 pt-4 border-t border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900">Advanced Steam & Dry Cleaning[cite: 16]</h3>
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                    BSGM&CS-LLC uses professional steam and dry cleaning for a deep and gentle clean. Steam cleans fabric to remove dirt, kill germs, and remove odors[cite: 16].
+                </p>
+            </div>
+
+            <!-- Stain & Odor Removal Experts -->
+            <div class="space-y-3 pt-4 border-t border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900">Stain & Odor Removal Experts[cite: 17]</h3>
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                    Tough stains and smells banish with our special treatments. We use advanced cleaning agents to remove wine spills, pet accidents, food marks, and more. Even old, set-in stains disappear completely. Our bad odor removal services make sure that your sofa smells fresh and clean every day[cite: 17].
+                </p>
+            </div>
+
+            <!-- Affordable Pricing -->
+            <div class="space-y-3 pt-4 border-t border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900">Affordable Pricing[cite: 17]</h3>
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                    We offer premium results at reasonable prices, and makes deep cleaning affordable for all. Our services cost far less than others but we never compromise in quality. You can customized packages to pay for what you only needs. And we don’t charge any hidden fees[cite: 17].
+                </p>
+            </div>
+
+            <!-- 100% Baby-Safe Solutions -->
+            <div class="space-y-3 pt-4 border-t border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900">100% Baby-Safe Solutions[cite: 17]</h3>
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                    Your family’s safety comes first. We use non-toxic, eco-friendly cleaners free from harsh chemicals. These gentle but effective formulas are safe for kids and pets. No dangerous materials remain after cleaning. Our hypoallergenic treatments are perfect for homes with babies or allergy sufferers. You get a deep clean without compromising your family’s health[cite: 17].
+                </p>
+            </div>
+
+            <!-- 100% Satisfaction Guaranteed -->
+            <div class="space-y-3 pt-4 border-t border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900">100% Satisfaction Guaranteed[cite: 17]</h3>
+                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                    We don’t leave until you’re completely happy with the result. Hundreds of happy customers in Banani trust us for reliable, high-quality sofa cleaning services. Your satisfaction is our top priority[cite: 17]!
+                </p>
+            </div>
+        </section>
+        <!-- Standard Sofa Cleaning Section -->
+    <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Left Image Side -->
+            <div class="lg:col-span-6">
+                <img src="../images/standard-sofa-cleaning.jpg" alt="Standard Sofa Cleaning" class="rounded-xl shadow-lg w-full object-cover h-[350px]">
+            </div>
+
+            <!-- Right Text Content -->
+            <div class="lg:col-span-6 space-y-4 text-gray-700 leading-relaxed">
+                <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
+                    BSGM&CS-LLC Sofa Cleaning Services – Tailored Solutions For You.
+                </h2>
+                <h3 class="text-xl font-semibold text-gray-800">Standard Sofa Cleaning</h3>
+                <p class="text-sm md:text-base">
+                    Every sofa needs regular care to stay fresh and clean. Our standard sofa cleaning gives your furniture a complete refresh with deep fabric cleaning that removes hidden dirt[cite: 1]. We tackle surface stains and remove odors, so that your sofa look and smell fresh[cite: 1]. Our expert cleaners use gentle brushing and professional methods to clean without damaging delicate fabrics[cite: 1].
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose BSGM&CS-LLC for Sofa Cleaning Section -->
+    <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Left Image Side -->
+            <div class="lg:col-span-6">
+                <img src="../images/why-choose-sofa.jpg" alt="Why Choose Sofa Cleaning" class="rounded-xl shadow-lg w-full object-cover h-[350px]">
+            </div>
+
+            <!-- Right Text Content -->
+            <div class="lg:col-span-6 space-y-4 text-gray-700 leading-relaxed">
+                <h2 class="text-2xl lg:text-3xl font-bold text-gray-900">
+                    Why Choose BSGM&CS-LLC for Sofa Cleaning?
+                </h2>
+                <p class="text-sm md:text-base">
+                    Your sofa is the central space of your living room, and it deserves expert care[cite: 2]. At BSGM&CS-LLC, we specialize in deep sofa cleaning that removes dirt, stains, and allergens[cite: 2]. We clean with care that protects your sofa's fabric and color[cite: 2]. Our certified technicians use advanced cleaning methods tailored to your sofa's material[cite: 2]. Whether it's delicate linen, leather, or microfiber, we pre-treat stubborn stains, remove odors, and sanitize every inch for a fresh, hygienic finish[cite: 2].
+                </p>
+                <p class="text-sm md:text-base">
+                    DIY methods may leave residue, but our eco-friendly, non-toxic solutions are safe for kids and pets[cite: 2]. We also offer fabric protection treatments to guard against future stains[cite: 2]. With affordable pricing, same-day service options, and a 100% satisfaction guarantee, BSGM&CS-LLC is your trusted choice for sofa cleaning[cite: 2].
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-12 bg-white rounded-2xl shadow-sm mb-8 border border-gray-100 px-6 lg:px-12">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-gray-900">Testimonial</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Testimonial 1 -->
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 relative space-y-4">
+                <div class="text-center text-gray-400 text-2xl"><i class="fa-solid fa-quote-right"></i></div>
+                <p class="text-gray-700 text-sm italic">
+                    "I was amazed at how BSGM&CS-LLC restored my white sofa after my toddler spilled juice all over it! The stains were gone entirely, and it smelled fresh. The team was punctual and professional. Highly recommend! They even gave me tips to maintain it between cleanings."
+                </p>
+                <div class="font-semibold text-gray-900 text-sm pt-2 border-t border-gray-200">
+                    Aisha, Khalifa City[cite: 3]
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 relative space-y-4">
+                <div class="text-center text-gray-400 text-2xl"><i class="fa-solid fa-quote-right"></i></div>
+                <p class="text-gray-700 text-sm italic">
+                    "We have two cats, and our sofa was covered in hair and odors. BSGM&CS-LLC deep cleaning removed everything, and the anti-bacterial treatment was a bonus. Will book again! The difference was visible the moment they finished."
+                </p>
+                <div class="font-semibold text-gray-900 text-sm pt-2 border-t border-gray-200">
+                    Ahmed, Al Reem Island[cite: 3]
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 relative space-y-4">
+                <div class="text-center text-gray-400 text-2xl"><i class="fa-solid fa-quote-right"></i></div>
+                <p class="text-gray-700 text-sm italic">
+                    "Same-day service saved me before a family gathering. The sofa looked brand new, and the pricing was fair. Excellent customer service! My guests thought I bought new furniture!"
+                </p>
+                <div class="font-semibold text-gray-900 text-sm pt-2 border-t border-gray-200">
+                    Sara, Corniche[cite: 3]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Common Footer Section -->
+    <footer class="bg-black text-white pt-12 pb-6">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Company Info -->
+            <div>
+                <h2 class="text-xl font-bold mb-4 text-amber-500">BRIGHT STREET</h2>
+                <p class="text-gray-400 text-sm mb-4">
+                    BRIGHT STREET CLEANING SERVICES is your trusted partner for all professional cleaning and sanitation needs in Bangladesh.
+                </p>
+                <h3 class="font-semibold mb-2">Connect with us</h3>
+                <div class="flex space-x-3 mb-6">
+                    <a href="https://facebook.com" target="_blank" class="bg-blue-600 p-2 rounded text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="bg-pink-600 p-2 rounded text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="bg-gray-700 p-2 rounded text-white"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://tiktok.com" target="_blank" class="bg-red-600 p-2 rounded text-white"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://web.whatsapp.com" target="_blank" class="bg-green-600 p-2 rounded text-white"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Our Services Links -->
+            <div>
+                <h3 class="text-lg font-bold mb-4 border-b border-gray-800 pb-2">Our Services</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="home-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Home Cleaning</a></li>
+                    <li><a href="deep-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Deep Cleaning Services</a></li>
+                    <li><a href="sofa-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Sofa Cleaning Services</a></li>
+                    <li><a href="window-cleaning.html" class="hover:text-white"><i class="fa-solid fa-angles-right text-xs mr-2 text-amber-500"></i> Window Cleaning Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Get In Touch -->
+            <div>
+                <h3 class="text-lg font-bold mb-4 border-b border-gray-800 pb-2">Get In Touch</h3>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-location-dot mr-2 text-amber-500"></i> Road 11, Banani, Dhaka - Bangladesh</p>
+                <p class="text-sm text-gray-400 mb-2"><i class="fa-solid fa-phone mr-2 text-amber-500"></i> +880 1711 223344</p>
+                <p class="text-sm text-gray-400 mb-4"><i class="fa-solid fa-envelope mr-2 text-amber-500"></i> info@brightstreet.bd</p>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 mt-8 pt-4 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+            <p>© 2026 Bright Street Cleaning Services LLC. All rights reserved.</p>
+            <p class="mt-2 md:mt-0">Designed & Developed by <span class="text-amber-500 font-semibold">Mymuna</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>
